@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!-->
+<html dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#" class="js" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8"><script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/nr-1071.js"></script><script async="" src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="https://www.health.arizona.edu/sites/default/files/siab-header_0.png">
+<meta name="generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="https://www.health.arizona.edu/immunization-requirements">
+<link rel="shortlink" href="https://www.health.arizona.edu/node/1556">
+  <title>Immunization Requirements | Campus Health Service</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+  <style>
+@import url("https://www.health.arizona.edu/modules/system/system.base.css?pceaz7");
+</style>
+<style>
+@import url("https://www.health.arizona.edu/modules/aggregator/aggregator.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/calendar/css/calendar_multiday.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/date/date_api/date.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/date/date_repeat_field/date_repeat_field.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/fences/field.css?pceaz7");
+</style>
+<style media="screen">
+@import url("https://www.health.arizona.edu/sites/all/modules/flexslider/assets/css/flexslider_img.css?pceaz7");
+</style>
+<style>
+@import url("https://www.health.arizona.edu/sites/all/modules/logintoboggan/logintoboggan.css?pceaz7");
+@import url("https://www.health.arizona.edu/modules/node/node.css?pceaz7");
+@import url("https://www.health.arizona.edu/modules/search/search.css?pceaz7");
+@import url("https://www.health.arizona.edu/modules/user/user.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/views/css/views.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?pceaz7");
+</style>
+<style>
+@import url("https://www.health.arizona.edu/sites/all/modules/colorbox/styles/default/colorbox_style.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/ctools/css/ctools.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/modules/custom/site_settings/site_settings.css?pceaz7");
+</style>
+<style>.tinynav{display:none;}#header #navigation ul.menu{display:block;}
+</style>
+<style media="all and (max-width:767px)">.tinynav{display:block;}#header #navigation ul.menu{display:none;}
+</style>
+<style>
+@import url("https://www.health.arizona.edu/sites/all/libraries/superfish/css/superfish.css?pceaz7");
+</style>
+<style>
+@import url("https://www.health.arizona.edu/sites/all/themes/ua_siab_fan/css/redbar.min.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/all/themes/ua_siab_fan/css/styles.css?pceaz7");
+</style>
+<style>
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_4.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_7.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_11.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_16.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_26.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_31.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_46.css?pceaz7");
+@import url("https://www.health.arizona.edu/sites/default/files/css_injector/css_injector_51.css?pceaz7");
+</style>
+  <script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/jquery_003.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/jquery_004.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/drupal.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/jquery.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/colorbox.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/colorbox_style.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/site_settings.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/tinynav-fork.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/tinynav-drupal.js"></script>
+<script>jQuery(document).ready(function () { 
+    jQuery("#zone-menu .region-menu ul.menu li ul ul").each(function() {
+      var parentwidth = jQuery(this).parent().width();
+      jQuery(this).css("left", parentwidth);
+    }); 
+    
+    jQuery("#zone-menu .region-menu ul.menu li").each(function() {
+      jQuery(this).children("ul").css("opacity", 1);
+      jQuery(this).children("ul").css("visibility", "visible");
+      jQuery(this).children("ul").css("display", "none");
+      
+      jQuery(this).hover(function() {
+        jQuery(this).children("ul").fadeIn("fast");
+      }, function() {
+        jQuery(this).children("ul").fadeOut("fast");
+      });
+    });
+  });</script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/googleanalytics.js"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-79406516-8", {"cookieDomain":"auto"});ga("send", "pageview");</script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/jquery_002.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/supposition.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/superfish_002.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/supersubs.js"></script>
+<script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/superfish.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ua_siab_fan","theme_token":"Qvar-A5dwor5ySEt3uExu8yubUVV0Jg2F9HObcaTRZw","js":{"sites\/all\/themes\/ua_siab_fan\/js\/redbar.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/custom\/site_settings\/site_settings.js":1,"sites\/all\/modules\/tinynav\/tinynav-fork.js":1,"sites\/all\/modules\/tinynav\/tinynav-drupal.js":1,"0":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/flexslider\/assets\/css\/flexslider_img.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/custom\/site_settings\/site_settings.css":1,"0":1,"1":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/themes\/ua_siab_fan\/system.menus.css":1,"sites\/all\/themes\/ua_siab_fan\/system.messages.css":1,"sites\/all\/themes\/ua_siab_fan\/system.theme.css":1,"sites\/all\/themes\/ua_siab_fan\/css\/redbar.min.css":1,"sites\/all\/themes\/ua_siab_fan\/css\/styles.css":1,"public:\/\/css_injector\/css_injector_4.css":1,"public:\/\/css_injector\/css_injector_7.css":1,"public:\/\/css_injector\/css_injector_11.css":1,"public:\/\/css_injector\/css_injector_16.css":1,"public:\/\/css_injector\/css_injector_26.css":1,"public:\/\/css_injector\/css_injector_31.css":1,"public:\/\/css_injector\/css_injector_46.css":1,"public:\/\/css_injector\/css_injector_51.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"tinynav":{"selector":"#header #navigation ul.menu","media_query":"all and (max-width:767px)","header":false,"active":"active-trail"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackColorbox":1},"urlIsAjaxTrusted":{"\/immunization-requirements":true},"superfish":{"1":{"id":"1","sf":{"animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":false,"disableHI":false},"plugins":{"supposition":true,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-1556 node-type-page section-immunization-requirements">
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+    <!-- Begin RedBar Code -->
+    <div class="ua-redbar-v1">
+      <nav class="redbar navbar-static-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                        <a class="redbar-brand" href="http://www.arizona.edu/"><p>The University of Arizona</p></a>
+          </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://www.arizona.edu/apply" target="_new">Apply</a></li>
+              <li><a href="http://www.arizona.edu/visit" target="_new">Visit</a></li>
+              <li><a href="http://www.arizona.edu/give" target="_new">Give</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+                  </div>
+      </nav>
+    </div>
+    <!-- End RedBar Code -->
+
+      
+<div id="page">
+
+  <header class="header page-wrapper" id="header" role="banner">
+
+          <a href="https://www.health.arizona.edu/" title="Home" rel="home" class="header__logo" id="logo"><img src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/ua_chs_logo_2014_color.png" alt="Home" class="header__logo-image"></a>
+    
+    
+    
+      <div class="header__region region region-header">
+    <div id="block-search-form" class="block block-search first last odd" role="search">
+
+      
+  <form action="/immunization-requirements" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="SEARCH" id="edit-search-block-form--2" name="search_block_form" size="15" maxlength="128" class="form-text" type="text">
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input id="edit-submit" name="op" value="Search" class="form-submit" type="submit"></div><input name="form_build_id" value="form-wya9trluJ6E7IFvBV99JkujEJh7MA57I3f3ofAPoUVA" type="hidden">
+<input name="form_id" value="search_block_form" type="hidden">
+</div>
+</div></form>
+</div>
+  </div>
+
+    <div id="navigation">
+
+      
+        <div class="region region-navigation">
+    <div id="block-superfish-1" class="block block-superfish first last odd">
+
+      
+  <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-5 sf-single-items-1 tinyjs l_tinynav1 superfish-processed sf-js-enabled"><li id="menu-567-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-11 sf-parent-children-2 sf-single-children-9 menuparent"><a href="https://www.health.arizona.edu/about-us" class="sf-depth-1 menuparent">About Us</a><ul style="float: none; width: 27em;" class="sf-hidden"><li id="menu-2466-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/phone-location-hours" class="sf-depth-2" style="">Phone, Location &amp; Hours</a></li><li id="menu-3951-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/faq/are-you-eligible-services-campus-health-service" class="sf-depth-2" style="">Are You Eligible for Services at the Campus Health Service?</a></li><li id="menu-2681-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/accreditation-awards" class="sf-depth-2" style="">Accreditation &amp; Awards</a></li><li id="menu-3071-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/celebrating-100-years" class="sf-depth-2" style="">Celebrating 100 Years</a></li><li id="menu-2686-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/conference-room-reservation" class="sf-depth-2" style="">Conference Room Reservation</a></li><li id="menu-2451-1" class="middle even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/confidentiality-patient-rights-responsibilities" class="sf-depth-2" style="">Confidentiality, Patient Rights &amp; Responsibilities</a></li><li id="menu-2386-1" class="middle odd sf-item-7 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style=""><a href="https://www.health.arizona.edu/get-involved" class="sf-depth-2 menuparent" style="">Get Involved</a><ul style="left: 100%; float: none; width: 16.4211em;" class="sf-hidden"><li id="menu-2766-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/volunteer-information" class="sf-depth-3" style="">Volunteer Information</a></li></ul></li><li id="menu-607-1" class="middle even sf-item-8 sf-depth-2 sf-total-children-17 sf-parent-children-0 sf-single-children-17 menuparent" style=""><a href="https://www.health.arizona.edu/people" class="sf-depth-2 menuparent" style="">Meet Our Staff</a><ul style="left: 100%; float: none; width: 26em;" class="sf-hidden"><li id="menu-982-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/administrative-staff" title="Administrative Staff" class="sf-depth-3" style="">Administrative Staff</a></li><li id="menu-2616-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/billing-claims" title="Billing &amp; Claims" class="sf-depth-3" style="">Billing &amp; Claims</a></li><li id="menu-2421-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/clinical-staff" title="Clinical Staff" class="sf-depth-3" style="">Clinical Staff</a></li><li id="menu-2431-1" class="middle even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/counseling-psych-services" title="Counseling &amp; Psych Services" class="sf-depth-3" style="">Counseling &amp; Psych Services</a></li><li id="menu-4831-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/distribution-logistics" title="Distribution &amp; Logistics" class="sf-depth-3" style="">Distribution &amp; Logistics</a></li><li id="menu-2571-1" class="middle even sf-item-6 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/health-promotion-and-preventive-services" title="Health Promotion and Preventive Services" class="sf-depth-3" style="">Health Promotion and Preventive Services</a></li><li id="menu-2786-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/information-technology" title="Information Technology" class="sf-depth-3" style="">Information Technology</a></li><li id="menu-2576-1" class="middle even sf-item-8 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/insurance" title="Insurance" class="sf-depth-3" style="">Insurance</a></li><li id="menu-4836-1" class="middle odd sf-item-9 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/laboratory" title="Laboratory" class="sf-depth-3" style="">Laboratory</a></li><li id="menu-2446-1" class="middle even sf-item-10 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/management-team" title="Management Team" class="sf-depth-3" style="">Management Team</a></li><li id="menu-2561-1" class="middle odd sf-item-11 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/medical-records" title="Medical Records" class="sf-depth-3" style="">Medical Records</a></li><li id="menu-2441-1" class="middle even sf-item-12 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/nursing-staff" title="Nursing Staff" class="sf-depth-3" style="">Nursing Staff</a></li><li id="menu-2426-1" class="middle odd sf-item-13 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/pharmacy-staff" title="Pharmacy Staff" class="sf-depth-3" style="">Pharmacy Staff</a></li><li id="menu-4841-1" class="middle even sf-item-14 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/radiology" title="Radiology" class="sf-depth-3" style="">Radiology</a></li><li id="menu-2566-1" class="middle odd sf-item-15 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/referrals" title="Referrals" class="sf-depth-3" style="">Referrals</a></li><li id="menu-2586-1" class="middle even sf-item-16 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/sports-medicine" title="Sports Medicine" class="sf-depth-3" style="">Sports Medicine</a></li><li id="menu-1014-1" class="last odd sf-item-17 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/people/support-services" title="Support Services" class="sf-depth-3" style="">Support Services</a></li></ul></li><li id="menu-4846-1" class="middle odd sf-item-9 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/notice-privacy-practices-protected-health-information" class="sf-depth-2" style="">Notice of Privacy Practices for Protected Health Information</a></li><li id="menu-1018-1" class="middle even sf-item-10 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/our-vision-mission-0" class="sf-depth-2" style="">Our Vision &amp; Mission</a></li><li id="menu-2401-1" class="last odd sf-item-11 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/training-opportunities" class="sf-depth-2" style="">Training</a></li></ul></li><li id="menu-969-1" class="active-trail middle even sf-item-2 sf-depth-1 sf-total-children-18 sf-parent-children-9 sf-single-children-9 menuparent"><a href="https://www.health.arizona.edu/services" class="sf-depth-1 menuparent">Services</a><ul style="float: none; width: 27em;" class="sf-hidden"><li id="menu-3211-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/academic-absences-withdrawals" class="sf-depth-2" style="">Academic Absences &amp; Withdrawals</a></li><li id="menu-2356-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/charges-billing-payment" class="sf-depth-2" style="">Charges, Billing &amp; Payment</a></li><li id="menu-3796-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent" style=""><a href="https://www.health.arizona.edu/colleges-medicine-nursing-and-pharmacy-uahs" class="sf-depth-2 menuparent" style="">Colleges of Medicine, Nursing, and Pharmacy - UAHS</a><ul style="left: 100%; float: none; width: 24.7368em;" class="sf-hidden"><li id="menu-2696-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/comcopimmunizationuploads" target="_blank" class="sf-depth-3" style="">Immunization Upload &amp; PatientLink</a></li><li id="menu-3801-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/student-exposure-bloodbody-fluids" class="sf-depth-3" style="">Student Exposure to Blood/Body Fluids</a></li><li id="menu-3806-1" class="last odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/tb-testing" class="sf-depth-3" style="">TB Testing UAHS Flowchart</a></li></ul></li><li id="menu-2611-1" class="middle even sf-item-4 sf-depth-2 sf-total-children-14 sf-parent-children-2 sf-single-children-12 menuparent" style=""><a href="https://www.health.arizona.edu/counseling-psych-services" class="sf-depth-2 menuparent" style="">Counseling &amp; Psych Services</a><ul style="left: 100%; float: none; width: 26.1579em;" class="sf-hidden"><li id="menu-3036-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/caps-faqs" class="sf-depth-3" style="">CAPS FAQ</a></li><li id="menu-3791-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/self-help" class="sf-depth-3" style="">Self-Help Resources</a></li><li id="menu-3011-1" class="middle odd sf-item-3 sf-depth-3 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent" style=""><a href="https://www.health.arizona.edu/what-we-do" class="sf-depth-3 menuparent" style="">What We Do</a><ul style="left: 100%; float: none; width: 23.8421em;" class="sf-hidden"><li id="menu-3051-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/counseling-brief-therapy" class="sf-depth-4" style="">Counseling &amp; Brief Therapy</a></li><li id="menu-3041-1" class="middle even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/obtaining-medications-addadhd-0" class="sf-depth-4" style="">Obtaining Medications for ADD/ADHD</a></li><li id="menu-3046-1" class="last odd sf-item-3 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/psychiatric-medication" class="sf-depth-4" style="">Psychiatric Medication</a></li></ul></li><li id="menu-3971-1" class="middle even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/collegiate-recovery" target="_blank" class="sf-depth-3" style="">Collegiate Recovery (Substance Abuse)</a></li><li id="menu-3741-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/capsforms" class="sf-depth-3" style="">CAPS Forms</a></li><li id="menu-3021-1" class="middle even sf-item-6 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/caps-groups-workshops" class="sf-depth-3" style="">Groups &amp; Workshops</a></li><li id="menu-4886-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/mindful-ambassadors" class="sf-depth-3" style="">Mindful Ambassadors</a></li><li id="menu-3836-1" class="middle even sf-item-8 sf-depth-3 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent" style=""><a href="https://www.health.arizona.edu/oasis-sexual-assault-and-trauma-services" class="sf-depth-3 menuparent" style="">Oasis Sexual Assault and Trauma Services</a><ul style="left: 100%; float: none; width: 23.2632em;" class="sf-hidden"><li id="menu-3866-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/advocacy#Advocacy" class="sf-depth-4" style="">Advocacy</a></li><li id="menu-3901-1" class="middle even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/node/3341/#communityresources" class="sf-depth-4" style="">Community Resources</a></li><li id="menu-3871-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/confidential-reporting#confidentialreporting" class="sf-depth-4" style="">Confidential Reporting</a></li><li id="menu-3876-1" class="middle even sf-item-4 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/consultation-and-counseling#Consultation" class="sf-depth-4" style="">Consultation and Counseling</a></li><li id="menu-3891-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/node/3341/#Howdoimakeanappointment" class="sf-depth-4" style="">How Do I Make An Appointment</a></li><li id="menu-3896-1" class="middle even sf-item-6 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/referrals#referrals" class="sf-depth-4" style="">Referrals and Community Resources</a></li><li id="menu-3906-1" class="last odd sf-item-7 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/ua-code-conduct#Codeofconduct" class="sf-depth-4" style="">U.A. Code of Conduct Complaint</a></li></ul></li><li id="menu-3016-1" class="middle odd sf-item-9 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/crisis-resources-and-hotlines" class="sf-depth-3" style="">Crisis Resources</a></li><li id="menu-5112-1" class="middle even sf-item-10 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/eating-and-body-image-concerns" class="sf-depth-3" style="">Eating and Body Image Concerns</a></li><li id="menu-5111-1" class="middle odd sf-item-11 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/concerned-friends" class="sf-depth-3" style="">For Concerned Friends</a></li><li id="menu-3861-1" class="middle even sf-item-12 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/faculty-and-staff" class="sf-depth-3" style="">For Faculty and Staff</a></li><li id="menu-5110-1" class="middle odd sf-item-13 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/parents-and-family" class="sf-depth-3" style="">For Parents and Family</a></li><li id="menu-5113-1" class="last even sf-item-14 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/lgbtqia-resources-and-treatment" class="sf-depth-3" style="">LGBTQIA Resources and Treatment</a></li></ul></li><li id="menu-2341-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/general-medicine" class="sf-depth-2" style="">General Medicine</a></li><li id="menu-3116-1" class="middle even sf-item-6 sf-depth-2 sf-total-children-14 sf-parent-children-3 sf-single-children-11 menuparent" style=""><a href="https://www.health.arizona.edu/health-promotion-and-preventive-services" class="sf-depth-2 menuparent" style="">Health Promotion and Preventive Services</a><ul style="left: 100%; float: none; width: 27em;" class="sf-hidden"><li id="menu-2791-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" style=""><a href="https://www.health.arizona.edu/alcohol" class="sf-depth-3 menuparent" style="">Alcohol</a><ul style="left: 100%; float: none; width: 22.1579em;" class="sf-hidden"><li id="menu-2846-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/individual-consultation-referral" class="sf-depth-4" style="">Individual Consultation &amp; Referral</a></li><li id="menu-2996-1" class="middle even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/alcohol-programs" class="sf-depth-4" style="">Programs</a></li><li id="menu-2856-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/resources-0" class="sf-depth-4" style="">Resources</a></li><li id="menu-2796-1" class="last even sf-item-4 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/redcup-qa" class="sf-depth-4" style="">The RedCup Q&amp;A</a></li></ul></li><li id="menu-4876-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/catsafterdark" class="sf-depth-3" style="">Cats After Dark</a></li><li id="menu-2991-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="http://friend2friend.health.arizona.edu/" class="sf-depth-3" style="">Friend 2 Friend</a></li><li id="menu-2811-1" class="middle even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/health-media-online" target="_blank" class="sf-depth-3" style="">Health Media Online</a></li><li id="menu-2821-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/ra" class="sf-depth-3" style="">Just For RAs</a></li><li id="menu-2826-1" class="middle even sf-item-6 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/living-wild-e-magazine" class="sf-depth-3" style="">Living Wild eMagazine</a></li><li id="menu-4851-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/marijuana" class="sf-depth-3" style="">Marijuana</a></li><li id="menu-2816-1" class="middle even sf-item-8 sf-depth-3 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent" style=""><a href="https://www.health.arizona.edu/nutrition" class="sf-depth-3 menuparent" style="">Nutrition</a><ul style="left: 100%; float: none; width: 12.3158em;" class="sf-hidden"><li id="menu-2861-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/handouts" class="sf-depth-4" style="">Handouts</a></li><li id="menu-2866-1" class="middle even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/nutrinews" class="sf-depth-4" style="">NutriNews</a></li><li id="menu-2871-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/programs" class="sf-depth-4" style="">Programs</a></li><li id="menu-2876-1" class="middle even sf-item-4 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/recipes" class="sf-depth-4" style="">Recipes</a></li><li id="menu-2881-1" class="last odd sf-item-5 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/related-links" class="sf-depth-4" style="">Related Links</a></li></ul></li><li id="menu-2831-1" class="middle odd sf-item-9 sf-depth-3 sf-total-children-4 sf-parent-children-0 sf-single-children-4 menuparent" style=""><a href="https://www.health.arizona.edu/sexual-health" class="sf-depth-3 menuparent" style="">Sexual Health</a><ul style="left: 100%; float: none; width: 13.4737em;" class="sf-hidden"><li id="menu-2896-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/contraception" class="sf-depth-4" style="">Contraception</a></li><li id="menu-2901-1" class="middle even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/resources-1" class="sf-depth-4" style="">Resources</a></li><li id="menu-2891-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/stds" class="sf-depth-4" style="">STDs</a></li><li id="menu-2886-1" class="last even sf-item-4 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/sextalk-column" target="_blank" class="sf-depth-4" style="">SexTalk Column</a></li></ul></li><li id="menu-2986-1" class="middle even sf-item-10 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/stressbusters" target="_blank" class="sf-depth-3" style="">Stressbusters</a></li><li id="menu-2801-1" class="middle odd sf-item-11 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/student-health-alcohol-drug-education-shade" class="sf-depth-3" style="">Student Health Alcohol &amp; Drug Education (SHADE)</a></li><li id="menu-2906-1" class="middle even sf-item-12 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/suicide-prevention" target="_blank" class="sf-depth-3" style="">Suicide Prevention</a></li><li id="menu-4821-1" class="middle odd sf-item-13 sf-depth-3 sf-no-children" style=""><a href="http://www.health.arizona.edu/tobacco-cessation" class="sf-depth-3" style="">Tobacco Cessation</a></li><li id="menu-4906-1" class="last even sf-item-14 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/weve-got-data" class="sf-depth-3" style="">We've Got Data</a></li></ul></li><li id="menu-2476-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/laboratory" class="sf-depth-2" style="">Laboratory</a></li><li id="menu-2591-1" class="middle even sf-item-8 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/massage-therapy" class="sf-depth-2" style="">Massage Therapy</a></li><li id="menu-2416-1" class="middle odd sf-item-9 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style=""><a href="https://www.health.arizona.edu/medical-records" class="sf-depth-2 menuparent" style="">Medical Records</a><ul style="left: 100%; float: none; width: 12em;" class="sf-hidden"><li id="menu-2976-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/medrecforms" class="sf-depth-3" style="">Forms</a></li></ul></li><li id="menu-2706-1" class="middle even sf-item-10 sf-depth-2 sf-total-children-5 sf-parent-children-1 sf-single-children-4 menuparent" style=""><a href="https://www.health.arizona.edu/occupational-health-clinic" class="sf-depth-2 menuparent" style="">Occupational Health Clinic</a><ul style="left: 100%; float: none; width: 15.2632em;" class="sf-hidden"><li id="menu-2741-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a href="https://www.health.arizona.edu/animal-hazards" class="sf-depth-3 menuparent" style="">Animal Hazards</a><ul style="left: 100%; float: none; width: 18.4737em;" class="sf-hidden"><li id="menu-3186-1" class="first odd sf-item-1 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/online-forms-log" class="sf-depth-4" style="">Online Forms Log-In</a></li><li id="menu-2751-1" class="last even sf-item-2 sf-depth-4 sf-no-children" style=""><a href="https://www.health.arizona.edu/declinations-non-compliance" class="sf-depth-4" style="">Declinations / Exemptions</a></li></ul></li><li id="menu-2716-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/injured-job" class="sf-depth-3" style="">Injured on the Job?</a></li><li id="menu-3171-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/other-programs" class="sf-depth-3" style="">Other Programs</a></li><li id="menu-3166-1" class="middle even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/contact-us" class="sf-depth-3" style="">Contact Us</a></li><li id="menu-3181-1" class="last odd sf-item-5 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/helpful-links" class="sf-depth-3" style="">Helpful Links</a></li></ul></li><li id="menu-3701-1" class="middle odd sf-item-11 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/patientlink" class="sf-depth-2" style="">PatientLink</a></li><li id="menu-2346-1" class="middle even sf-item-12 sf-depth-2 sf-total-children-9 sf-parent-children-0 sf-single-children-9 menuparent" style=""><a href="https://www.health.arizona.edu/pharmacy" class="sf-depth-2 menuparent" style="">Pharmacy</a><ul style="left: 100%; float: none; width: 23.8421em;" class="sf-hidden"><li id="menu-3146-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/asthma-education-program" class="sf-depth-3" style="">Asthma Education Program</a></li><li id="menu-2536-1" class="middle even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/birth-control-prescriptions" class="sf-depth-3" style="">Birth Control Prescriptions</a></li><li id="menu-3156-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/frequently-asked-questions" class="sf-depth-3" style="">FAQs</a></li><li id="menu-3151-1" class="middle even sf-item-4 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/formulary" class="sf-depth-3" style="">Formulary</a></li><li id="menu-2551-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/obtaining-medications-addadhd" class="sf-depth-3" style="">Obtaining Medications for ADD/ADHD</a></li><li id="menu-2546-1" class="middle even sf-item-6 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/campus-prescriptions" class="sf-depth-3" style="">Off-Campus Prescriptions</a></li><li id="menu-3161-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/over-counter-products" class="sf-depth-3" style="">OTC Products</a></li><li id="menu-2541-1" class="middle even sf-item-8 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/prescription-top-10-sellers" class="sf-depth-3" style="">Prescription Top 10 Sellers</a></li><li id="menu-4916-1" class="last odd sf-item-9 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/prescription-drug-drop-box" class="sf-depth-3" style="">Prescription Drug Drop Box</a></li></ul></li><li id="menu-2331-1" class="middle odd sf-item-13 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/std-testing" class="sf-depth-2" style="">STD Testing</a></li><li id="menu-2581-1" class="middle even sf-item-14 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a href="https://www.health.arizona.edu/sports-medicine" class="sf-depth-2 menuparent" style="">Sports Medicine</a><ul style="left: 100%; float: none; width: 13.8947em;" class="sf-hidden"><li id="menu-2601-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/orthopedics" class="sf-depth-3" style="">Orthopedics</a></li><li id="menu-2596-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/physical-therapy" class="sf-depth-3" style="">Physical Therapy</a></li></ul></li><li id="menu-2471-1" class="active-trail middle odd sf-item-15 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a href="https://www.health.arizona.edu/travel-clinic-immunizations" class="sf-depth-2 menuparent" style="">Travel &amp; Immunizations</a><ul style="left: 100%; float: none; width: 19.5263em;" class="sf-hidden"><li id="menu-2556-1" class="active-trail first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/immunization-requirements" class="sf-depth-3 active" style="">Immunization Requirements</a></li><li id="menu-3176-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/travel-clinic" class="sf-depth-3" style="">Travel Clinic</a></li></ul></li><li id="menu-2671-1" class="middle even sf-item-16 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/walk-clinic" class="sf-depth-2" style="">Walk-In Clinic</a></li><li id="menu-2326-1" class="middle odd sf-item-17 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent" style=""><a href="https://www.health.arizona.edu/womens-health" class="sf-depth-2 menuparent" style="">Women's Health</a><ul style="left: 100%; float: none; width: 12em;" class="sf-hidden"><li id="menu-3216-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/pregnancy" class="sf-depth-3" style="">Pregnancy</a></li></ul></li><li id="menu-2676-1" class="last even sf-item-18 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/x-ray" class="sf-depth-2" style="">X-Ray</a></li></ul></li><li id="menu-2306-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="https://www.health.arizona.edu/appointments" class="sf-depth-1 menuparent">Appointments</a><ul style="float: none; width: 17.3158em;" class="sf-hidden"><li id="menu-3056-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/appointments-online" class="sf-depth-2" style="">Appointments Online</a></li><li id="menu-2651-1" class="last even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/appointments-phone" class="sf-depth-2" style="">Appointments by Phone</a></li></ul></li><li id="menu-2311-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-9 sf-parent-children-3 sf-single-children-6 menuparent"><a href="https://www.health.arizona.edu/fees-insurance" class="sf-depth-1 menuparent">Fees &amp; Insurance</a><ul style="float: none; width: 27em;" class="sf-hidden"><li id="menu-2511-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/student-discounted-rate" class="sf-depth-2" style="">Student Discounted Rate</a></li><li id="menu-2656-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a href="https://www.health.arizona.edu/campuscare" class="sf-depth-2 menuparent" style="">CampusCare</a><ul style="left: 100%; float: none; width: 27em;" class="sf-hidden"><li id="menu-2661-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/2017-2018-campuscare-benefits-coverage-period" class="sf-depth-3" style="">2017-2018 CampusCare Benefits &amp; Coverage Period</a></li><li id="menu-3081-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/2018-2019-campuscare-benefits-coverage-period" class="sf-depth-3" style="">2018-2019 CampusCare Benefits &amp; Coverage Period</a></li></ul></li><li id="menu-2526-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a href="https://www.health.arizona.edu/student-health-insurance" class="sf-depth-2 menuparent" style="">Student Health Insurance</a><ul style="left: 100%; float: none; width: 26.2105em;" class="sf-hidden"><li id="menu-3086-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/2017-2018-student-health-insurance-plan" class="sf-depth-3" style="">2017-2018 Student Health Insurance Plan</a></li><li id="menu-3121-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/2018-2019-student-health-insurance-plan" class="sf-depth-3" style="">2018-2019 Student Health Insurance Plan</a></li></ul></li><li id="menu-3196-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/international-students-0" class="sf-depth-2" style="">International Students</a></li><li id="menu-2516-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/ua-online-ua-south-distance-learner-students" class="sf-depth-2" style="">UA Online, UA South &amp; Distance Learner Students</a></li><li id="menu-2361-1" class="middle even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/gender-reassignment-benefit" class="sf-depth-2" style="">Gender Reassignment Benefits</a></li><li id="menu-2521-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/commercial-health-insurance-plans" class="sf-depth-2" style="">Commercial Health Insurance Plans</a></li><li id="menu-4866-1" class="middle even sf-item-8 sf-depth-2 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent" style=""><a href="https://www.health.arizona.edu/aetna-dental-ppo" class="sf-depth-2 menuparent" style="">Dental Insurance Plan</a><ul style="left: 100%; float: none; width: 22.9474em;" class="sf-hidden"><li id="menu-5107-1" class="first odd sf-item-1 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/node/9976/" class="sf-depth-3" style="">2017-2018 Dental Plan Information</a></li><li id="menu-5108-1" class="last even sf-item-2 sf-depth-3 sf-no-children" style=""><a href="https://www.health.arizona.edu/node/15894/" class="sf-depth-3" style="">2018-2019 Dental Plan Information</a></li></ul></li><li id="menu-3076-1" class="last odd sf-item-9 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/dental-discount-program" class="sf-depth-2" style="">Dental Discount Program</a></li></ul></li><li id="menu-2316-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a href="https://www.health.arizona.edu/new-students" class="sf-depth-1 menuparent">New Students</a><ul style="float: none; width: 16.7368em;" class="sf-hidden"><li id="menu-2366-1" class="first odd sf-item-1 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/freshman" class="sf-depth-2" style="">Freshman</a></li><li id="menu-3736-1" class="middle even sf-item-2 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/graduate-students" class="sf-depth-2" style="">Graduate Students</a></li><li id="menu-2376-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/international-students" class="sf-depth-2" style="">International Students</a></li><li id="menu-2381-1" class="middle even sf-item-4 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/parents" class="sf-depth-2" style="">Parents</a></li><li id="menu-2371-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/transfer-students" class="sf-depth-2" style="">Transfer Students</a></li><li id="menu-2806-1" class="last even sf-item-6 sf-depth-2 sf-no-children" style=""><a href="https://www.health.arizona.edu/ua-online-students" class="sf-depth-2" style="">UA Online Students</a></li></ul></li><li id="menu-2496-1" class="last even sf-item-6 sf-depth-1 sf-no-children"><a href="https://www.health.arizona.edu/emergency-after-hours" class="sf-depth-1">Emergency / After Hours</a></li></ul><div class="tinynav-wrapper"><select class="tinynav tinynav1"><option value="/about-us">About Us</option><option value="/phone-location-hours">-- Phone, Location &amp; Hours</option><option value="/faq/are-you-eligible-services-campus-health-service">-- Are You Eligible for Services at the Campus Health Service?</option><option value="/accreditation-awards">-- Accreditation &amp; Awards</option><option value="/celebrating-100-years">-- Celebrating 100 Years</option><option value="/conference-room-reservation">-- Conference Room Reservation</option><option value="/confidentiality-patient-rights-responsibilities">-- Confidentiality, Patient Rights &amp; Responsibilities</option><option value="/get-involved">-- Get Involved</option><option value="/people">-- Meet Our Staff</option><option value="/notice-privacy-practices-protected-health-information">-- Notice of Privacy Practices for Protected Health Information</option><option value="/our-vision-mission-0">-- Our Vision &amp; Mission</option><option value="/training-opportunities">-- Training</option><option value="/services">Services</option><option value="/academic-absences-withdrawals">-- Academic Absences &amp; Withdrawals</option><option value="/charges-billing-payment">-- Charges, Billing &amp; Payment</option><option value="/colleges-medicine-nursing-and-pharmacy-uahs">-- Colleges of Medicine, Nursing, and Pharmacy - UAHS</option><option value="/counseling-psych-services">-- Counseling &amp; Psych Services</option><option value="/general-medicine">-- General Medicine</option><option value="/health-promotion-and-preventive-services">-- Health Promotion and Preventive Services</option><option value="/laboratory">-- Laboratory</option><option value="/massage-therapy">-- Massage Therapy</option><option value="/medical-records">-- Medical Records</option><option value="/occupational-health-clinic">-- Occupational Health Clinic</option><option value="/patientlink">-- PatientLink</option><option value="/pharmacy">-- Pharmacy</option><option value="/std-testing">-- STD Testing</option><option value="/sports-medicine">-- Sports Medicine</option><option value="/travel-clinic-immunizations">-- Travel &amp; Immunizations</option><option value="/walk-clinic">-- Walk-In Clinic</option><option value="/womens-health">-- Women's Health</option><option value="/x-ray" selected="selected">-- X-Ray</option><option value="/appointments">Appointments</option><option value="/appointments-online">-- Appointments Online</option><option value="/appointments-phone">-- Appointments by Phone</option><option value="/fees-insurance">Fees &amp; Insurance</option><option value="/student-discounted-rate">-- Student Discounted Rate</option><option value="/campuscare">-- CampusCare</option><option value="/student-health-insurance">-- Student Health Insurance</option><option value="/international-students-0">-- International Students</option><option value="/ua-online-ua-south-distance-learner-students">-- UA Online, UA South &amp; Distance Learner Students</option><option value="/gender-reassignment-benefit">-- Gender Reassignment Benefits</option><option value="/commercial-health-insurance-plans">-- Commercial Health Insurance Plans</option><option value="/aetna-dental-ppo">-- Dental Insurance Plan</option><option value="/dental-discount-program">-- Dental Discount Program</option><option value="/new-students">New Students</option><option value="/freshman">-- Freshman</option><option value="/graduate-students">-- Graduate Students</option><option value="/international-students">-- International Students</option><option value="/parents">-- Parents</option><option value="/transfer-students">-- Transfer Students</option><option value="/ua-online-students">-- UA Online Students</option><option value="/emergency-after-hours">Emergency / After Hours</option></select></div>
+</div>
+  </div>
+
+    </div>
+
+  </header>
+
+  <div id="home-slideshow">
+      <div class="region region-home-slideshow">
+    <div id="block-nodeblock-2756" class="block block-nodeblock first last odd">
+
+      
+  <div id="node-2756" class="node node-block view-mode-full clearfix" about="/block/health-services-static-header-image" typeof="sioc:Item foaf:Document">
+
+        <span property="dc:title" content="Health Services Static Header Image" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <p><img alt="Doctor with Students" title="Doctor With Students" class="media-element file-default" typeof="foaf:Image" src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/chs-header-doctors-03.jpg" border="0"></p>
+  </div>
+  </div>
+
+  
+  
+</div>
+
+</div>
+  </div>
+  </div>
+
+  <div id="main" class="page-wrapper">
+
+    <div id="content" class="column" role="main">
+                  <a id="main-content"></a>
+                    <h1 class="page__title title" id="page-title">Immunization Requirements</h1>
+                                          
+
+
+<article class="node-1556 node node-page view-mode-full clearfix" about="/immunization-requirements" typeof="foaf:Document">
+
+      <header>
+                  <span property="dc:title" content="Immunization Requirements" class="rdf-meta element-hidden"></span>
+      
+          </header>
+  
+  
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <p><!--[if gte mso 9]><p><xml><br />
+ <o:OfficeDocumentSettings><br />
+  <o:AllowPNG></o:AllowPNG><br />
+ </o:OfficeDocumentSettings><br />
+</xml><![endif]--></p>
+<p><!--[if gte mso 9]><p><xml><br />
+ <w:WordDocument><br />
+  <w:View>Normal</w:View><br />
+  <w:Zoom>0</w:Zoom><br />
+  <w:TrackMoves></w:TrackMoves><br />
+  <w:TrackFormatting></w:TrackFormatting><br />
+  <w:PunctuationKerning></w:PunctuationKerning><br />
+  <w:ValidateAgainstSchemas></w:ValidateAgainstSchemas><br />
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid><br />
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent><br />
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText><br />
+  <w:DoNotPromoteQF></w:DoNotPromoteQF><br />
+  <w:LidThemeOther>EN-US</w:LidThemeOther><br />
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian><br />
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript><br />
+  <w:Compatibility><br />
+   <w:BreakWrappedTables></w:BreakWrappedTables><br />
+   <w:SnapToGridInCell></w:SnapToGridInCell><br />
+   <w:WrapTextWithPunct></w:WrapTextWithPunct><br />
+   <w:UseAsianBreakRules></w:UseAsianBreakRules><br />
+   <w:DontGrowAutofit></w:DontGrowAutofit><br />
+   <w:SplitPgBreakAndParaMark></w:SplitPgBreakAndParaMark><br />
+   <w:EnableOpenTypeKerning></w:EnableOpenTypeKerning><br />
+   <w:DontFlipMirrorIndents></w:DontFlipMirrorIndents><br />
+   <w:OverrideTableStyleHps></w:OverrideTableStyleHps><br />
+  </w:Compatibility><br />
+  <m:mathPr><br />
+   <m:mathFont m:val="Cambria Math"></m:mathFont><br />
+   <m:brkBin m:val="before"></m:brkBin><br />
+   <m:brkBinSub m:val="&#45;-"></m:brkBinSub><br />
+   <m:smallFrac m:val="off"></m:smallFrac><br />
+   <m:dispDef></m:dispDef><br />
+   <m:lMargin m:val="0"></m:lMargin><br />
+   <m:rMargin m:val="0"></m:rMargin><br />
+   <m:defJc m:val="centerGroup"></m:defJc><br />
+   <m:wrapIndent m:val="1440"></m:wrapIndent><br />
+   <m:intLim m:val="subSup"></m:intLim><br />
+   <m:naryLim m:val="undOvr"></m:naryLim><br />
+  </m:mathPr></w:WordDocument><br />
+</xml><![endif]--></p>
+<!--[if gte mso 9]><p><xml><br />
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"<br />
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"<br />
+  LatentStyleCount="371"><br />
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 6"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 7"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 8"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index 9"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 7"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 8"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="toc 9"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Normal Indent"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="footnote text"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="annotation text"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="header"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="footer"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="index heading"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="caption"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="table of figures"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="envelope address"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="envelope return"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="footnote reference"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="annotation reference"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="line number"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="page number"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="endnote reference"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="endnote text"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="table of authorities"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="macro"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="toa heading"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Bullet"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Number"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Bullet 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Bullet 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Bullet 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Bullet 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Number 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Number 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Number 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Number 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Closing"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Signature"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="Default Paragraph Font"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text Indent"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Continue"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Continue 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Continue 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Continue 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="List Continue 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Message Header"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Salutation"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Date"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text First Indent"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text First Indent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Note Heading"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text Indent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Body Text Indent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Block Text"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Hyperlink"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="FollowedHyperlink"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Document Map"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Plain Text"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="E-mail Signature"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Top of Form"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Bottom of Form"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Normal (Web)"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Acronym"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Address"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Cite"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Code"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Definition"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Keyboard"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Preformatted"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Sample"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Typewriter"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="HTML Variable"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Normal Table"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="annotation subject"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="No List"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Outline List 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Outline List 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Outline List 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Simple 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Simple 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Simple 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Classic 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Classic 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Classic 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Classic 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Colorful 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Colorful 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Colorful 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Columns 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Columns 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Columns 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Columns 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Columns 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 6"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 7"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Grid 8"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 4"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 5"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 6"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 7"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table List 8"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table 3D effects 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table 3D effects 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table 3D effects 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Contemporary"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Elegant"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Professional"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Subtle 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Subtle 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Web 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Web 2"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Web 3"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Balloon Text"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"<br />
+   Name="Table Theme"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="34" QFormat="true"<br />
+   Name="List Paragraph"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="30" QFormat="true"<br />
+   Name="Intense Quote"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="19" QFormat="true"<br />
+   Name="Subtle Emphasis"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="21" QFormat="true"<br />
+   Name="Intense Emphasis"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="31" QFormat="true"<br />
+   Name="Subtle Reference"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="32" QFormat="true"<br />
+   Name="Intense Reference"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"<br />
+   UnhideWhenUsed="true" Name="Bibliography"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"<br />
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="Grid Table 1 Light Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="Grid Table 6 Colorful Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="Grid Table 7 Colorful Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="Grid Table 1 Light Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="Grid Table 6 Colorful Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="Grid Table 7 Colorful Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="Grid Table 1 Light Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="Grid Table 6 Colorful Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="Grid Table 7 Colorful Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="Grid Table 1 Light Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="Grid Table 6 Colorful Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="Grid Table 7 Colorful Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="Grid Table 1 Light Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="Grid Table 6 Colorful Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="Grid Table 7 Colorful Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="Grid Table 1 Light Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="Grid Table 6 Colorful Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="Grid Table 7 Colorful Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="List Table 1 Light Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="List Table 6 Colorful Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="List Table 7 Colorful Accent 1"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="List Table 1 Light Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="List Table 6 Colorful Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="List Table 7 Colorful Accent 2"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="List Table 1 Light Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="List Table 6 Colorful Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="List Table 7 Colorful Accent 3"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="List Table 1 Light Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="List Table 6 Colorful Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="List Table 7 Colorful Accent 4"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="List Table 1 Light Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="List Table 6 Colorful Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="List Table 7 Colorful Accent 5"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="46"<br />
+   Name="List Table 1 Light Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="51"<br />
+   Name="List Table 6 Colorful Accent 6"></w:LsdException><br />
+  <w:LsdException Locked="false" Priority="52"<br />
+   Name="List Table 7 Colorful Accent 6"></w:LsdException><br />
+ </w:LatentStyles><br />
+</xml><![endif]-->
+<!--[if gte mso 10]><style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+</style><p><![endif]-->
+<p><strong>Immunization Requirements</strong><br><br> The University of 
+Arizona requires verification of measles and mumps immunity for all 
+students born after 12/31/56. If you were born prior to 12/31/56 you are
+ exempt. Immunization records must be obtained from your health care 
+provider indicating dates of:</p>
+<p>a) Two (2) MMR immunizations, at least one of which must have been administered after 12/31/79.</p>
+<p>b) The first vaccination is given&nbsp;on or after 1 year of age and 
+the second is commonly given at or after 4 - 6 years of age. An MMR 
+given to you before your first birthday will be considered invalid. The 
+two MMR vaccinations after your first birthday must also be at least 28 
+days apart&nbsp;to be vaild.</p>
+<p>-OR-</p>
+<p>c) A lab test that shows immunity to Measles, Mumps, and Rubella.</p>
+<p>You will not be permitted to register for classes without proof of 
+immunity against Measles and Mumps on file with the Campus Health 
+Service.</p>
+<p>When your record is received and processed, your hold from UAccess 
+will be removed and your Next Steps Center (undergrad) will have a green
+ check mark. Please allow 1-2 business days for processing.</p>
+<p><strong>Incoming Students:</strong> <br> You may download the <a href="http://www.health.arizona.edu/sites/health/files/mmr_immunization_requirement_-_f-medrec_11-2016.pdf" target="_blank">New Student Immunization Requirement </a>form
+ and have your health care provider complete and sign it, or you may 
+fill in your personal information and attach a copy of your 
+vaccination/blood testing records.</p>
+<p>If you have an electronic copy of your immunizations, you can 
+submit&nbsp;the&nbsp;record through your PatientLink portal by clicking 
+the icon below and signing in with your NetID and password. On the 
+homepage you will need to select the&nbsp;'Forms' tab and then 
+'Immunization History.' From there you will be prompted to enter your 
+immunization dates and attach your documentation. You are encouraged to 
+enter&nbsp;as many immunizations as possible, beyond the 2 
+MMR's,&nbsp;in the event you are seen for medical services&nbsp;at the 
+Campus Health clinic.&nbsp;</p>
+<p>Please allow&nbsp;2 business days for your documents to be verified 
+and for the immunization hold to be lifted from your account.</p>
+
+<p><a href="https://webauth.arizona.edu/webauth/login?service=https%3a%2f%2fpatientlink.health.arizona.edu%2findex.aspx" target="_blank"><img style="margin-right:auto;margin-left:auto;display:block;max-width:266px;" class="media-element file-media-responsive" data-delta="1" src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/chs-patientlink_0.png" alt="" title="" width="100%" border="0"></a></p>
+
+<p><strong>College of Medicine and College of Pharmacy Students:</strong><br><a title="Health Screening form for College of Medicine and Pharmacy Students" href="https://www.aamc.org/download/440110/data/immunizationform.pdf" target="_blank">Immunization Requirement form for students accepted into the College of Medicine, College of Pharmacy</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+  </div>
+  <h3 class="field-label">
+    File Upload  </h3>
+
+  <div class="field field-name-field-file-upload field-type-file field-label-above">
+    <span class="file"><img class="file-icon" alt="PDF icon" title="application/pdf" src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/application-pdf.png"> <a href="https://www.health.arizona.edu/sites/default/files/immunizationform_3.pdf" type="application/pdf; length=169919" title="immunizationform.pdf">Health Screening form for College of Medicine and Pharmacy Students</a></span>  </div>
+
+  
+  
+</article>
+          </div>
+
+    
+          <aside class="sidebars">
+          <section class="region region-sidebar-first column sidebar">
+    <div id="block-menu-block-2" class="block block-menu-block first last odd" role="navigation">
+
+        <h2 class="block__title block-title">Travel &amp; Immunizations</h2>
+    
+  <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-3">
+  <ul class="menu"><li class="menu__item is-active is-active-trail is-leaf first leaf active-trail active menu-mlid-2556"><a href="https://www.health.arizona.edu/immunization-requirements" class="menu__link is-active-trail active-trail active">Immunization Requirements</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3176"><a href="https://www.health.arizona.edu/travel-clinic" class="menu__link">Travel Clinic</a></li>
+</ul></div>
+
+</div>
+  </section>
+              </aside>
+    
+  </div>
+
+    <footer id="footer" class="region region-footer">
+    <div class="page-wrapper">	
+      <div id="block-nodeblock-193" class="block block-nodeblock footer-ua-logo first odd">
+
+      
+  <div id="node-193" class="node node-block view-mode-full clearfix" about="/block/footer-site-logo" typeof="sioc:Item foaf:Document">
+
+        <span property="dc:title" content="Footer Site Logo" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <div><a target="_blank" href="http://www.arizona.edu/"><img alt="The University of Arizona" title="The University of Arizona" style="max-width:245px;" class="media-element file-media-responsive" src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/ua_horiz_rgb_0.png" width="100%" border="0"></a></div>
+  </div>
+  </div>
+
+  
+  
+</div>
+
+</div>
+<div id="block-menu-menu-footer-menu" class="block block-menu footer-menu even" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://www.health.arizona.edu/about-us" title="" class="menu__link">About</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://www.health.arizona.edu/people" title="" class="menu__link">People</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://www.health.arizona.edu/calendar" class="menu__link">Calendar</a></li>
+<li class="menu__item is-leaf last leaf"><a href="https://www.health.arizona.edu/contact" title="Contact" class="menu__link">Contact</a></li>
+</ul>
+</div>
+<div id="block-block-7" class="block block-block footer-copyright odd">
+
+      
+  <p>1224 E. Lowell St. | PO Box 210095 | Tucson, AZ 85721-0095 | Phone: <a href="tel:5206216490">520-621-6490</a> <br>Copyright © 2018 Arizona Board of Regents.  The University of Arizona, Tucson, Arizona | <a href="https://www.health.arizona.edu/sitemap.xml">Sitemap</a> | <a href="https://www.health.arizona.edu/cas">Staff Login</a></p>
+</div>
+<div id="block-site-settings-site-settings-media" class="block block-site-settings last even">
+
+      
+  <ul id="social-media-links" class="clearfix"><li class="fb"><a href="http://www.facebook.com/campushealth" class="facebook" target="_blank" title="Click here to visit our Facebook page">Facebook</a></li><li class="li"><a href="http://instagram.com/uacampushealth/" class="linkedin" target="_blank" title="Click here to visit our Instagram page">LinkedIn</a></li><li class="yt"><a href="http://youtube.com/uacampushealth" class="youtube" target="_blank" title="Click here to visit our YouTube page">Youtube</a></li><li class="tw"><a href="http://twitter.com/uacampushealth" class="twitter" target="_blank" title="Click here to visit our Twitter feed">Twitter</a></li></ul>
+</div>
+    </div>
+  </footer>
+
+</div>
+
+  <script src="Immunization%20Requirements%20|%20Campus%20Health%20Service_files/redbar.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7d9ba38c2c","applicationID":"133595601","transactionName":"ZlxRY0FUXBECUUMNDl8WclRHXF0MTFxYAARuSVJQVmpECwZF","queueTime":0,"applicationTime":768,"atts":"ShtSFQlOTx8=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>
