@@ -25,7 +25,4 @@ should have all the water chemistry measurements (nitrate etc)
 
 [Hawaii Ocean Time-series Data Organization & Graphical System (HOT-DOGS)](http://hahana.soest.hawaii.edu/hot/hot-dogs/interface.html#)
 
-go to the Data Extraction link for the metadata descriptions
-
-
-use this page for the [doccumentation of the niskin bottle metadata description](http://dmoserv3.bco-dmo.org/jg/info/BCO-DMO/HOT/niskin%7Bdir=dmoserv3.whoi.edu/jg/dir/BCO-DMO/HOT/,data=dmoserv3.bco-dmo.org:80/jg/serv/BCO-DMO/HOT/niskin.brev0%7D?) which links to another useful [description page]
+go to the Data Extraction link for the metadata descriptions and use this page for the [doccumentation of the niskin bottle metadata description](http://dmoserv3.bco-dmo.org/jg/info/BCO-DMO/HOT/niskin%7Bdir=dmoserv3.whoi.edu/jg/dir/BCO-DMO/HOT/,data=dmoserv3.bco-dmo.org:80/jg/serv/BCO-DMO/HOT/niskin.brev0%7D?) which links to another useful [description page](https://datadocs.bco-dmo.org/docs/302/HOT/data_docs/3773/1/Readme.water.jgofs)
