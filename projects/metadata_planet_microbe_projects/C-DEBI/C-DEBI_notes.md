@@ -3,6 +3,9 @@
 C-DEBI data is available for download for download via the BCO-DMO for example this link
 https://www.bco-dmo.org/dataset/737962/data/download
 
+
+From Ben Tully we got this link for the [C-DEBI project page on BCO-DMO](https://www.bco-dmo.org/program/554979)
+
 We'll need to get the relevant BCO-DMO dataset accession numbers, as there are a variety of projects and we need to decide which of it will be put into planet microbe. Presumably the projects with non-16S omics data, and then if they have any corresponding physiochem data? Do we want just metagenomic data? or also 16S amplicons?
 
 
