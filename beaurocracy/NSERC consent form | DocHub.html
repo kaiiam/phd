@@ -1,0 +1,2175 @@
+<!DOCTYPE html>
+<html style="-moz-user-select: text;"><head style="-moz-user-select: text;">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="NSERC%20consent%20form%20|%20DocHub_files/cbgapi.loaded_0" async="" style="-moz-user-select: text;"></script> <script src="NSERC%20consent%20form%20|%20DocHub_files/nr-spa-1071.js" style="-moz-user-select: text;"></script><script async="" src="NSERC%20consent%20form%20|%20DocHub_files/analytics.js" style="-moz-user-select: text;"></script><script style="-moz-user-select: text;">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"494d88a3e9","applicationID":"21025970","transactionName":"dQsNEBAMWwlTQklXQ0YICgcDF14KWB8PW0NZFhc7BgxUEFtVCEI=","queueTime":0,"applicationTime":48,"agent":""}</script> <script style="-moz-user-select: text;">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUOWFVaDRACVVFQAggAVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(20),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{h?h-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(21),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",h=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(h+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&h>0&&(h-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,S=y.hash,this[u]=b.now()}function o(){M--,y.hash!==S&&i(0,!0);var t=b.now();this[l]=~~this[l]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=b.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,h="cb"+s,l="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,b=t("loader");if(w[v]&&b.xhrWrappable){var g=t(10),x=t(11),E=t(8),P=t(6),O=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),N=j.get("tracer");t(15),b.features.spa=!0;var S,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(h,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),P.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),T.buffer([u,"new-xhr","send-xhr"+c]),R.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),g.buffer([u]),x.buffer(["propagate",p,h,"executor-err","resolve"+c]),N.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+c),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+c),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",h="-start",l="-end",m="fn"+h,v="fn"+l,w="bstTimer",y="pushState",b=t("loader");b.features.stn=!0,t(8);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=b.now())}),o.on(v,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,b.now()])}),a.on(m,function(t,e,n){this.bstStart=b.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),this.bstType])}),c.on(m,function(){this.bstStart=b.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,b.now(),"requestAnimationFrame"])}),o.on(y+h,function(t){this.time=b.now(),this.startPath=location.pathname+location.hash}),o.on(y+l,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(23)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(20);e.exports=o;var a=window,c="fetch-",s=c+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,h="prototype";u&&d&&p&&(i(f,function(t,e){r(u[h],e,s),r(d[h],e,s)}),r(a,"fetch",c),o.on(c+"end",function(t,e){var n=this;e?e.clone().arrayBuffer().then(function(t){n.rxSize=t.byteLength,o.emit(c+"done",[null,e],n)}):o.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(23)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t(23)(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,h,"dom-"),f.inPlace(HTMLHeadElement.prototype,h,"dom-"),f.inPlace(HTMLBodyElement.prototype,h,"dom-"),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(23)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(23),a=t("ee").get("promise"),c=i(a),s=t(20),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(23)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(23)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",c)}function i(t){b.push(t),l&&(x?x.then(a):v?v(a):(E=-E,P.data=E))}function a(){for(var t=0;t<b.length;t++)r([],b[t]);b.length&&(b=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(23)(u),p=NREUM.o,h=p.XHR,l=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],b=[];e.exports=u;var g=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(h,g),g.prototype=h.prototype,d.inPlace(g.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),l){var x=m&&m.resolve();if(!v&&!m){var E=1,P=document.createTextNode(E);new l(a).observe(P,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return l(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),h=t(19),l=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=l(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<d;c++)e.addEventListener(u[c],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(20),c=t(21),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var l=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){l[e]=o(h+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],21:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],22:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],23:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(21),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=l(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([b,n,r,a]),a}}function h(t,e){w[t]=l(t).concat(e)}function l(t){return w[t]||[]}function m(t){return d[t]=d[t]||o(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var w={},y={},b={on:h,emit:n,get:m,listeners:l,context:e,buffer:v,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(20),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!x++){var t=g.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(y,function(e,n){t[e]||(t[e]=n)}),s("mark",["onload",a()+g.offset],null,"api");var n=p.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===p.readyState&&i()}function i(){s("mark",["domContent",a()+g.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(c=Math.max((new Date).getTime(),c))-g.offset}var c=(new Date).getTime(),s=t("handle"),f=t(20),u=t("ee"),d=window,p=d.document,h="addEventListener",l="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1071.min.js"},b=m&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:c,now:a,origin:w,features:{},xhrWrappable:b};t(17),p[h]?(p[h]("DOMContentLoaded",i,!1),d[h]("load",r,!1)):(p[l]("onreadystatechange",o),d[l]("onload",r)),s("mark",["firstbyte",c],null,"api");var x=0,E=t(22)},{}]},{},["loader",2,15,5,3,4]);</script>  <meta name="constantsPayload" content="{&quot;APPLICATION_VERSION&quot;:&quot;2.6.1&quot;,&quot;GOOGLE_CLIENT_ID&quot;:&quot;1179802238-balmr1e5m7sdgvoeu5lp28a5g6luvim5.apps.googleusercontent.com&quot;}" style="-moz-user-select: text;"> <meta name="flash-messages" content="[]" style="-moz-user-select: text;"> <meta name="latest-release-note" content="{&quot;data&quot;:{&quot;id&quot;:&quot;162&quot;,&quot;type&quot;:&quot;release-notes&quot;,&quot;attributes&quot;:{&quot;description&quot;:&quot;DocHub version 2.6 is a massive backend update. Highlights include:\n* Rework of data structures passed between front and back ends\n * Lays foundation for future development of a public API\n* API privacy and security improvements\n* Improved response times for server requests\n* Improved client render performance&quot;,&quot;update-type&quot;:&quot;FEATURE&quot;,&quot;title&quot;:&quot;DocHub v2.6 released! This update includes many backend updates.&quot;,&quot;released-at&quot;:&quot;2018-08-07T01:36:06.000-05:00&quot;,&quot;created-at&quot;:&quot;2018-08-07T01:36:06.000-05:00&quot;,&quot;updated-at&quot;:&quot;2018-08-07T01:36:06.000-05:00&quot;}}}" style="-moz-user-select: text;"> <meta name="isOldBrowser" content="false" style="-moz-user-select: text;"> <meta name="sentry:revision" content="146b272a1a9a8e32007c9f6043d79a3b" style="-moz-user-select: text;"> <meta name="importJobUuid" content="4b1c6039a775b160c8f7c25b9a8c392d" style="-moz-user-select: text;"> <meta name="csrf-param" content="authenticity_token" style="-moz-user-select: text;"> <meta name="csrf-token" content="U7kynuEIaExDbcYBOIELM7pQxrnk9HilXYHRidWIBpCmY88nAqfgo0YwKCf4y6LiWaLwyd7AQFj7FNfVpkymmw==" style="-moz-user-select: text;"> <script style="-moz-user-select: text;">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-6088184-14', { 'userId': '24565498' }, 'auto');
+    ga('require', 'displayfeatures');
+  </script> <link rel="stylesheet" media="screen" href="NSERC%20consent%20form%20|%20DocHub_files/vendor-1b4d15ccf7b14eb00f50ccac74ef1a2c.css" style="-moz-user-select: text;"> <link rel="stylesheet" media="screen" href="NSERC%20consent%20form%20|%20DocHub_files/dochub-a6ee8e925d5a06cd1e6eecc27fa4568d.css" style="-moz-user-select: text;"> <style type="text/css" style="-moz-user-select: text;">.jp-card.jp-card-safari.jp-card-identified .jp-card-front:before, .jp-card.jp-card-safari.jp-card-identified .jp-card-back:before {   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);   background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); }  .jp-card.jp-card-ie-10.jp-card-flipped, .jp-card.jp-card-ie-11.jp-card-flipped {   -webkit-transform: 0deg;   -moz-transform: 0deg;   -ms-transform: 0deg;   -o-transform: 0deg;   transform: 0deg; }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-front, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-front {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }   .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back {     -webkit-transform: rotateY(0deg);     -moz-transform: rotateY(0deg);     -ms-transform: rotateY(0deg);     -o-transform: rotateY(0deg);     transform: rotateY(0deg); }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back:after {       left: 18%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-cvc, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-cvc {       -webkit-transform: rotateY(180deg);       -moz-transform: rotateY(180deg);       -ms-transform: rotateY(180deg);       -o-transform: rotateY(180deg);       transform: rotateY(180deg);       left: 5%; }     .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny {       left: 84%; }       .jp-card.jp-card-ie-10.jp-card-flipped .jp-card-back .jp-card-shiny:after, .jp-card.jp-card-ie-11.jp-card-flipped .jp-card-back .jp-card-shiny:after {         left: -480%;         -webkit-transform: rotateY(180deg);         -moz-transform: rotateY(180deg);         -ms-transform: rotateY(180deg);         -o-transform: rotateY(180deg);         transform: rotateY(180deg); }  .jp-card.jp-card-ie-10.jp-card-amex .jp-card-back, .jp-card.jp-card-ie-11.jp-card-amex .jp-card-back {   display: none; }  .jp-card-logo {   height: 36px;   width: 60px;   font-style: italic; }   .jp-card-logo, .jp-card-logo:before, .jp-card-logo:after {     box-sizing: border-box; }  .jp-card-logo.jp-card-amex {   text-transform: uppercase;   font-size: 4px;   font-weight: bold;   color: white;   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   background-image: repeating-radial-gradient(circle at center, #FFF 1px, #999 2px);   border: 1px solid #EEE; }   .jp-card-logo.jp-card-amex:before, .jp-card-logo.jp-card-amex:after {     width: 28px;     display: block;     position: absolute;     left: 16px; }   .jp-card-logo.jp-card-amex:before {     height: 28px;     content: "american";     top: 3px;     text-align: left;     padding-left: 2px;     padding-top: 11px;     background: #267AC3; }   .jp-card-logo.jp-card-amex:after {     content: "express";     bottom: 11px;     text-align: right;     padding-right: 2px; }  .jp-card.jp-card-amex.jp-card-flipped {   -webkit-transform: none;   -moz-transform: none;   -ms-transform: none;   -o-transform: none;   transform: none; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:before, .jp-card.jp-card-amex.jp-card-identified .jp-card-back:before {   background-color: #108168; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-logo.jp-card-amex {   opacity: 1; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front .jp-card-cvc {   visibility: visible; }  .jp-card.jp-card-amex.jp-card-identified .jp-card-front:after {   opacity: 1; }  .jp-card-logo.jp-card-discover {   background: #FF6600;   color: #111;   text-transform: uppercase;   font-style: normal;   font-weight: bold;   font-size: 10px;   text-align: center;   overflow: hidden;   z-index: 1;   padding-top: 9px;   letter-spacing: .03em;   border: 1px solid #EEE; }   .jp-card-logo.jp-card-discover:before, .jp-card-logo.jp-card-discover:after {     content: " ";     display: block;     position: absolute; }   .jp-card-logo.jp-card-discover:before {     background: white;     width: 200px;     height: 200px;     border-radius: 200px;     bottom: -5%;     right: -80%;     z-index: -1; }   .jp-card-logo.jp-card-discover:after {     width: 8px;     height: 8px;     border-radius: 4px;     top: 10px;     left: 27px;     background-color: #FF6600;     background-image: -webkit-radial-gradient(#FF6600, #fff);     background-image: radial-gradient(  #FF6600, #fff);     content: "network";     font-size: 4px;     line-height: 24px;     text-indent: -7px; }  .jp-card .jp-card-front .jp-card-logo.jp-card-discover {   right: 12%;   top: 18%; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:before, .jp-card.jp-card-discover.jp-card-identified .jp-card-back:before {   background-color: #86B8CF; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-logo.jp-card-discover {   opacity: 1; }  .jp-card.jp-card-discover.jp-card-identified .jp-card-front:after {   -webkit-transition: 400ms;   -moz-transition: 400ms;   transition: 400ms;   content: " ";   display: block;   background-color: #FF6600;   background-image: -webkit-linear-gradient(#FF6600, #ffa366, #FF6600);   background-image: linear-gradient(#FF6600, #ffa366, #FF6600);   height: 50px;   width: 50px;   border-radius: 25px;   position: absolute;   left: 100%;   top: 15%;   margin-left: -25px;   box-shadow: inset 1px 1px 3px 1px rgba(0, 0, 0, 0.5); }  .jp-card-logo.jp-card-visa {   background: white;   text-transform: uppercase;   color: #1A1876;   text-align: center;   font-weight: bold;   font-size: 15px;   line-height: 18px; }   .jp-card-logo.jp-card-visa:before, .jp-card-logo.jp-card-visa:after {     content: " ";     display: block;     width: 100%;     height: 25%; }   .jp-card-logo.jp-card-visa:before {     background: #1A1876; }   .jp-card-logo.jp-card-visa:after {     background: #E79800; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-front:before, .jp-card.jp-card-visa.jp-card-identified .jp-card-back:before {   background-color: #191278; }  .jp-card.jp-card-visa.jp-card-identified .jp-card-logo.jp-card-visa {   opacity: 1; }  .jp-card-logo.jp-card-mastercard {   color: white;   font-weight: bold;   text-align: center;   font-size: 9px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-mastercard:before, .jp-card-logo.jp-card-mastercard:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-mastercard:before {     left: 0;     background: #FF0000;     z-index: -1; }   .jp-card-logo.jp-card-mastercard:after {     right: 0;     background: #FFAB00;     z-index: -2; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front .jp-card-logo.jp-card-mastercard, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back .jp-card-logo.jp-card-mastercard {   box-shadow: none; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-front:before, .jp-card.jp-card-mastercard.jp-card-identified .jp-card-back:before {   background-color: #0061A8; }  .jp-card.jp-card-mastercard.jp-card-identified .jp-card-logo.jp-card-mastercard {   opacity: 1; }  .jp-card-logo.jp-card-maestro {   color: white;   font-weight: bold;   text-align: center;   font-size: 14px;   line-height: 36px;   z-index: 1;   text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }   .jp-card-logo.jp-card-maestro:before, .jp-card-logo.jp-card-maestro:after {     content: " ";     display: block;     width: 36px;     top: 0;     position: absolute;     height: 36px;     border-radius: 18px; }   .jp-card-logo.jp-card-maestro:before {     left: 0;     background: #0064CB;     z-index: -1; }   .jp-card-logo.jp-card-maestro:after {     right: 0;     background: #CC0000;     z-index: -2; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front .jp-card-logo.jp-card-maestro, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back .jp-card-logo.jp-card-maestro {   box-shadow: none; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-front:before, .jp-card.jp-card-maestro.jp-card-identified .jp-card-back:before {   background-color: #0B2C5F; }  .jp-card.jp-card-maestro.jp-card-identified .jp-card-logo.jp-card-maestro {   opacity: 1; }  .jp-card-logo.jp-card-dankort {   width: 60px;   height: 36px;   padding: 3px;   border-radius: 8px;   border: #000000 1px solid;   background-color: #FFFFFF; }   .jp-card-logo.jp-card-dankort .dk {     position: relative;     width: 100%;     height: 100%;     overflow: hidden; }     .jp-card-logo.jp-card-dankort .dk:before {       background-color: #ED1C24;       content: '';       position: absolute;       width: 100%;       height: 100%;       display: block;       border-radius: 6px; }     .jp-card-logo.jp-card-dankort .dk:after {       content: '';       position: absolute;       top: 50%;       margin-top: -7.7px;       right: 0;       width: 0;       height: 0;       border-style: solid;       border-width: 7px 7px 10px 0;       border-color: transparent #ED1C24 transparent transparent;       z-index: 1; }   .jp-card-logo.jp-card-dankort .d, .jp-card-logo.jp-card-dankort .k {     position: absolute;     top: 50%;     width: 50%;     display: block;     height: 15.4px;     margin-top: -7.7px;     background: white; }   .jp-card-logo.jp-card-dankort .d {     left: 0;     border-radius: 0 8px 10px 0; }     .jp-card-logo.jp-card-dankort .d:before {       content: '';       position: absolute;       top: 50%;       left: 50%;       display: block;       background: #ED1C24;       border-radius: 2px 4px 6px 0px;       height: 5px;       width: 7px;       margin: -3px 0 0 -4px; }   .jp-card-logo.jp-card-dankort .k {     right: 0; }     .jp-card-logo.jp-card-dankort .k:before, .jp-card-logo.jp-card-dankort .k:after {       content: '';       position: absolute;       right: 50%;       width: 0;       height: 0;       border-style: solid;       margin-right: -1px; }     .jp-card-logo.jp-card-dankort .k:before {       top: 0;       border-width: 8px 5px 0 0;       border-color: #ED1C24 transparent transparent transparent; }     .jp-card-logo.jp-card-dankort .k:after {       bottom: 0;       border-width: 0 5px 8px 0;       border-color: transparent transparent #ED1C24 transparent; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-front:before, .jp-card.jp-card-dankort.jp-card-identified .jp-card-back:before {   background-color: #0055C7; }  .jp-card.jp-card-dankort.jp-card-identified .jp-card-logo.jp-card-dankort {   opacity: 1; }  .jp-card-logo.jp-card-elo {   height: 50px;   width: 50px;   border-radius: 100%;   background: black;   color: white;   text-align: center;   text-transform: lowercase;   font-size: 21px;   font-style: normal;   letter-spacing: 1px;   font-weight: bold;   padding-top: 13px; }   .jp-card-logo.jp-card-elo .e, .jp-card-logo.jp-card-elo .l, .jp-card-logo.jp-card-elo .o {     display: inline-block;     position: relative; }   .jp-card-logo.jp-card-elo .e {     -webkit-transform: rotate(-15deg);     -moz-transform: rotate(-15deg);     -ms-transform: rotate(-15deg);     -o-transform: rotate(-15deg);     transform: rotate(-15deg); }   .jp-card-logo.jp-card-elo .o {     position: relative;     display: inline-block;     width: 12px;     height: 12px;     right: 0;     top: 7px;     border-radius: 100%;     background-image: -webkit-linear-gradient( yellow 50%, red 50%);     background-image: linear-gradient( yellow 50%, red 50%);     -webkit-transform: rotate(40deg);     -moz-transform: rotate(40deg);     -ms-transform: rotate(40deg);     -o-transform: rotate(40deg);     transform: rotate(40deg);     text-indent: -9999px; }     .jp-card-logo.jp-card-elo .o:before {       content: "";       position: absolute;       width: 49%;       height: 49%;       background: black;       border-radius: 100%;       text-indent: -99999px;       top: 25%;       left: 25%; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-front:before, .jp-card.jp-card-elo.jp-card-identified .jp-card-back:before {   background-color: #6F6969; }  .jp-card.jp-card-elo.jp-card-identified .jp-card-logo.jp-card-elo {   opacity: 1; }  .jp-card-container {   -webkit-perspective: 1000px;   -moz-perspective: 1000px;   perspective: 1000px;   width: 350px;   max-width: 100%;   height: 200px;   margin: auto;   z-index: 1;   position: relative; }  .jp-card {   font-family: "Helvetica Neue";   line-height: 1;   position: relative;   width: 100%;   height: 100%;   min-width: 315px;   border-radius: 10px;   -webkit-transform-style: preserve-3d;   -moz-transform-style: preserve-3d;   -ms-transform-style: preserve-3d;   -o-transform-style: preserve-3d;   transform-style: preserve-3d;   -webkit-transition: all 400ms linear;   -moz-transition: all 400ms linear;   transition: all 400ms linear; }   .jp-card > *, .jp-card > *:before, .jp-card > *:after {     -moz-box-sizing: border-box;     -webkit-box-sizing: border-box;     box-sizing: border-box;     font-family: inherit; }   .jp-card.jp-card-flipped {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }   .jp-card .jp-card-front, .jp-card .jp-card-back {     -webkit-backface-visibility: hidden;     backface-visibility: hidden;     -webkit-transform-style: preserve-3d;     -moz-transform-style: preserve-3d;     -ms-transform-style: preserve-3d;     -o-transform-style: preserve-3d;     transform-style: preserve-3d;     -webkit-transition: all 400ms linear;     -moz-transition: all 400ms linear;     transition: all 400ms linear;     width: 100%;     height: 100%;     position: absolute;     top: 0;     left: 0;     overflow: hidden;     border-radius: 10px;     background: #DDD; }     .jp-card .jp-card-front:before, .jp-card .jp-card-back:before {       content: " ";       display: block;       position: absolute;       width: 100%;       height: 100%;       top: 0;       left: 0;       opacity: 0;       border-radius: 10px;       -webkit-transition: all 400ms ease;       -moz-transition: all 400ms ease;       transition: all 400ms ease; }     .jp-card .jp-card-front:after, .jp-card .jp-card-back:after {       content: " ";       display: block; }     .jp-card .jp-card-front .jp-card-display, .jp-card .jp-card-back .jp-card-display {       color: white;       font-weight: normal;       opacity: 0.5;       -webkit-transition: opacity 400ms linear;       -moz-transition: opacity 400ms linear;       transition: opacity 400ms linear; }       .jp-card .jp-card-front .jp-card-display.jp-card-focused, .jp-card .jp-card-back .jp-card-display.jp-card-focused {         opacity: 1;         font-weight: 700; }     .jp-card .jp-card-front .jp-card-cvc, .jp-card .jp-card-back .jp-card-cvc {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 14px; }     .jp-card .jp-card-front .jp-card-shiny, .jp-card .jp-card-back .jp-card-shiny {       width: 50px;       height: 35px;       border-radius: 5px;       background: #CCC;       position: relative; }       .jp-card .jp-card-front .jp-card-shiny:before, .jp-card .jp-card-back .jp-card-shiny:before {         content: " ";         display: block;         width: 70%;         height: 60%;         border-top-right-radius: 5px;         border-bottom-right-radius: 5px;         background: #d9d9d9;         position: absolute;         top: 20%; }   .jp-card .jp-card-front .jp-card-logo {     position: absolute;     opacity: 0;     right: 5%;     top: 8%;     -webkit-transition: 400ms;     -moz-transition: 400ms;     transition: 400ms; }   .jp-card .jp-card-front .jp-card-lower {     width: 80%;     position: absolute;     left: 10%;     bottom: 30px; }     @media only screen and (max-width: 480px) {       .jp-card .jp-card-front .jp-card-lower {         width: 90%;         left: 5%; } }     .jp-card .jp-card-front .jp-card-lower .jp-card-cvc {       visibility: hidden;       float: right;       position: relative;       bottom: 5px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-number {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 24px;       clear: both;       margin-bottom: 30px; }     .jp-card .jp-card-front .jp-card-lower .jp-card-expiry {       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       letter-spacing: 0em;       position: relative;       float: right;       width: 25%; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before, .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         font-family: "Helvetica Neue";         font-weight: bold;         font-size: 7px;         white-space: pre;         display: block;         opacity: .5; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:before {         content: attr(data-before);         margin-bottom: 2px;         font-size: 7px;         text-transform: uppercase; }       .jp-card .jp-card-front .jp-card-lower .jp-card-expiry:after {         position: absolute;         content: attr(data-after);         text-align: right;         right: 100%;         margin-right: 5px;         margin-top: 2px;         bottom: 0; }     .jp-card .jp-card-front .jp-card-lower .jp-card-name {       text-transform: uppercase;       font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;       font-size: 20px;       max-height: 45px;       position: absolute;       bottom: 0;       width: 190px;       display: -webkit-box;       -webkit-line-clamp: 2;       -webkit-box-orient: horizontal;       overflow: hidden;       text-overflow: ellipsis; }   .jp-card .jp-card-back {     -webkit-transform: rotateY(180deg);     -moz-transform: rotateY(180deg);     -ms-transform: rotateY(180deg);     -o-transform: rotateY(180deg);     transform: rotateY(180deg); }     .jp-card .jp-card-back .jp-card-bar {       background-color: #444;       background-image: -webkit-linear-gradient(#444, #333);       background-image: linear-gradient(#444, #333);       width: 100%;       height: 20%;       position: absolute;       top: 10%; }     .jp-card .jp-card-back:after {       content: " ";       display: block;       background-color: #FFF;       background-image: -webkit-linear-gradient(#FFF, #FFF);       background-image: linear-gradient(#FFF, #FFF);       width: 80%;       height: 16%;       position: absolute;       top: 40%;       left: 2%; }     .jp-card .jp-card-back .jp-card-cvc {       position: absolute;       top: 40%;       left: 85%;       -webkit-transition-delay: 600ms;       -moz-transition-delay: 600ms;       transition-delay: 600ms; }     .jp-card .jp-card-back .jp-card-shiny {       position: absolute;       top: 66%;       left: 2%; }       .jp-card .jp-card-back .jp-card-shiny:after {         content: "This card has been issued by Jesse Pollak and is licensed for anyone to use anywhere for free.AIt comes with no warranty.A For support issues, please visit: github.com/jessepollak/card.";         position: absolute;         left: 120%;         top: 5%;         color: white;         font-size: 7px;         width: 230px;         opacity: .5; }   .jp-card.jp-card-identified {     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }     .jp-card.jp-card-identified .jp-card-front, .jp-card.jp-card-identified .jp-card-back {       background-color: #000;       background-color: rgba(0, 0, 0, 0.5); }       .jp-card.jp-card-identified .jp-card-front:before, .jp-card.jp-card-identified .jp-card-back:before {         -webkit-transition: all 400ms ease;         -moz-transition: all 400ms ease;         transition: all 400ms ease;         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-radial-gradient(circle at 15% 80%, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);         opacity: 1; }       .jp-card.jp-card-identified .jp-card-front .jp-card-logo, .jp-card.jp-card-identified .jp-card-back .jp-card-logo {         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3); }     .jp-card.jp-card-identified.no-radial-gradient .jp-card-front:before, .jp-card.jp-card-identified.no-radial-gradient .jp-card-back:before {       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), -webkit-linear-gradient(-245deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%);       background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.05) 1px, rgba(255, 255, 255, 0) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.03) 4px), repeating-linear-gradient(90deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), repeating-linear-gradient(210deg, rgba(255, 255, 255, 0) 1px, rgba(255, 255, 255, 0.03) 2px, rgba(255, 255, 255, 0.04) 3px, rgba(255, 255, 255, 0.05) 4px), linear-gradient(-25deg, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 90%); } </style><style style="-moz-user-select: text;">@-webkit-keyframes swal2-show {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); }
+  45% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  80% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes swal2-show {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7); }
+  45% {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+  80% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@-webkit-keyframes swal2-hide {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0; } }
+
+@keyframes swal2-hide {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0; } }
+
+@-webkit-keyframes swal2-animate-success-line-tip {
+  0% {
+    top: 1.1875em;
+    left: .0625em;
+    width: 0; }
+  54% {
+    top: 1.0625em;
+    left: .125em;
+    width: 0; }
+  70% {
+    top: 2.1875em;
+    left: -.375em;
+    width: 3.125em; }
+  84% {
+    top: 3em;
+    left: 1.3125em;
+    width: 1.0625em; }
+  100% {
+    top: 2.8125em;
+    left: .875em;
+    width: 1.5625em; } }
+
+@keyframes swal2-animate-success-line-tip {
+  0% {
+    top: 1.1875em;
+    left: .0625em;
+    width: 0; }
+  54% {
+    top: 1.0625em;
+    left: .125em;
+    width: 0; }
+  70% {
+    top: 2.1875em;
+    left: -.375em;
+    width: 3.125em; }
+  84% {
+    top: 3em;
+    left: 1.3125em;
+    width: 1.0625em; }
+  100% {
+    top: 2.8125em;
+    left: .875em;
+    width: 1.5625em; } }
+
+@-webkit-keyframes swal2-animate-success-line-long {
+  0% {
+    top: 3.375em;
+    right: 2.875em;
+    width: 0; }
+  65% {
+    top: 3.375em;
+    right: 2.875em;
+    width: 0; }
+  84% {
+    top: 2.1875em;
+    right: 0;
+    width: 3.4375em; }
+  100% {
+    top: 2.375em;
+    right: .5em;
+    width: 2.9375em; } }
+
+@keyframes swal2-animate-success-line-long {
+  0% {
+    top: 3.375em;
+    right: 2.875em;
+    width: 0; }
+  65% {
+    top: 3.375em;
+    right: 2.875em;
+    width: 0; }
+  84% {
+    top: 2.1875em;
+    right: 0;
+    width: 3.4375em; }
+  100% {
+    top: 2.375em;
+    right: .5em;
+    width: 2.9375em; } }
+
+@-webkit-keyframes swal2-rotate-success-circular-line {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  5% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  12% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); }
+  100% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); } }
+
+@keyframes swal2-rotate-success-circular-line {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  5% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  12% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); }
+  100% {
+    -webkit-transform: rotate(-405deg);
+            transform: rotate(-405deg); } }
+
+@-webkit-keyframes swal2-animate-error-x-mark {
+  0% {
+    margin-top: 1.625em;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0; }
+  50% {
+    margin-top: 1.625em;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0; }
+  80% {
+    margin-top: -.375em;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+  100% {
+    margin-top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@keyframes swal2-animate-error-x-mark {
+  0% {
+    margin-top: 1.625em;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0; }
+  50% {
+    margin-top: 1.625em;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+    opacity: 0; }
+  80% {
+    margin-top: -.375em;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+  100% {
+    margin-top: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1; } }
+
+@-webkit-keyframes swal2-animate-error-icon {
+  0% {
+    -webkit-transform: rotateX(100deg);
+            transform: rotateX(100deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1; } }
+
+@keyframes swal2-animate-error-icon {
+  0% {
+    -webkit-transform: rotateX(100deg);
+            transform: rotateX(100deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    opacity: 1; } }
+
+body.swal2-toast-shown .swal2-container {
+  position: fixed;
+  background-color: transparent; }
+  body.swal2-toast-shown .swal2-container.swal2-shown {
+    background-color: transparent; }
+  body.swal2-toast-shown .swal2-container.swal2-top {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  body.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .swal2-container.swal2-top-right {
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto; }
+  body.swal2-toast-shown .swal2-container.swal2-top-start, body.swal2-toast-shown .swal2-container.swal2-top-left {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0; }
+  body.swal2-toast-shown .swal2-container.swal2-center-start, body.swal2-toast-shown .swal2-container.swal2-center-left {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  body.swal2-toast-shown .swal2-container.swal2-center {
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  body.swal2-toast-shown .swal2-container.swal2-center-end, body.swal2-toast-shown .swal2-container.swal2-center-right {
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  body.swal2-toast-shown .swal2-container.swal2-bottom-start, body.swal2-toast-shown .swal2-container.swal2-bottom-left {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0; }
+  body.swal2-toast-shown .swal2-container.swal2-bottom {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  body.swal2-toast-shown .swal2-container.swal2-bottom-end, body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: auto; }
+
+body.swal2-toast-column .swal2-toast {
+  flex-direction: column;
+  align-items: stretch; }
+  body.swal2-toast-column .swal2-toast .swal2-actions {
+    flex: 1;
+    align-self: stretch;
+    height: 2.2em;
+    margin-top: .3125em; }
+  body.swal2-toast-column .swal2-toast .swal2-loading {
+    justify-content: center; }
+  body.swal2-toast-column .swal2-toast .swal2-input {
+    height: 2em;
+    margin: .3125em auto;
+    font-size: 1em; }
+  body.swal2-toast-column .swal2-toast .swal2-validationerror {
+    font-size: 1em; }
+
+.swal2-popup.swal2-toast {
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  padding: 0.625em;
+  box-shadow: 0 0 0.625em #d9d9d9;
+  overflow-y: hidden; }
+  .swal2-popup.swal2-toast .swal2-header {
+    flex-direction: row; }
+  .swal2-popup.swal2-toast .swal2-title {
+    flex-grow: 1;
+    justify-content: flex-start;
+    margin: 0 .6em;
+    font-size: 1em; }
+  .swal2-popup.swal2-toast .swal2-footer {
+    margin: 0.5em 0 0;
+    padding: 0.5em 0 0;
+    font-size: 0.8em; }
+  .swal2-popup.swal2-toast .swal2-close {
+    position: initial;
+    width: 0.8em;
+    height: 0.8em;
+    line-height: 0.8; }
+  .swal2-popup.swal2-toast .swal2-content {
+    justify-content: flex-start;
+    font-size: 1em; }
+  .swal2-popup.swal2-toast .swal2-icon {
+    width: 2em;
+    min-width: 2em;
+    height: 2em;
+    margin: 0; }
+    .swal2-popup.swal2-toast .swal2-icon-text {
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1em; }
+    .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+      width: 2em;
+      height: 2em; }
+    .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+      top: .875em;
+      width: 1.375em; }
+      .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='left'] {
+        left: .3125em; }
+      .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='right'] {
+        right: .3125em; }
+  .swal2-popup.swal2-toast .swal2-actions {
+    height: auto;
+    margin: 0 .3125em; }
+  .swal2-popup.swal2-toast .swal2-styled {
+    margin: 0 .3125em;
+    padding: .3125em .625em;
+    font-size: 1em; }
+    .swal2-popup.swal2-toast .swal2-styled:focus {
+      box-shadow: 0 0 0 0.0625em #fff, 0 0 0 0.125em rgba(50, 100, 150, 0.4); }
+  .swal2-popup.swal2-toast .swal2-success {
+    border-color: #a5dc86; }
+    .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-circular-line'] {
+      position: absolute;
+      width: 2em;
+      height: 2.8125em;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      border-radius: 50%; }
+      .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-circular-line'][class$='left'] {
+        top: -.25em;
+        left: -.9375em;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 2em 2em;
+                transform-origin: 2em 2em;
+        border-radius: 4em 0 0 4em; }
+      .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-circular-line'][class$='right'] {
+        top: -.25em;
+        left: .9375em;
+        -webkit-transform-origin: 0 2em;
+                transform-origin: 0 2em;
+        border-radius: 0 4em 4em 0; }
+    .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
+      width: 2em;
+      height: 2em; }
+    .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
+      top: 0;
+      left: .4375em;
+      width: .4375em;
+      height: 2.6875em; }
+    .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-line'] {
+      height: .3125em; }
+      .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-line'][class$='tip'] {
+        top: 1.125em;
+        left: .1875em;
+        width: .75em; }
+      .swal2-popup.swal2-toast .swal2-success [class^='swal2-success-line'][class$='long'] {
+        top: .9375em;
+        right: .1875em;
+        width: 1.375em; }
+  .swal2-popup.swal2-toast.swal2-show {
+    -webkit-animation: showSweetToast .5s;
+            animation: showSweetToast .5s; }
+  .swal2-popup.swal2-toast.swal2-hide {
+    -webkit-animation: hideSweetToast .2s forwards;
+            animation: hideSweetToast .2s forwards; }
+  .swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip {
+    -webkit-animation: animate-toast-success-tip .75s;
+            animation: animate-toast-success-tip .75s; }
+  .swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long {
+    -webkit-animation: animate-toast-success-long .75s;
+            animation: animate-toast-success-long .75s; }
+
+@-webkit-keyframes showSweetToast {
+  0% {
+    -webkit-transform: translateY(-0.625em) rotateZ(2deg);
+            transform: translateY(-0.625em) rotateZ(2deg);
+    opacity: 0; }
+  33% {
+    -webkit-transform: translateY(0) rotateZ(-2deg);
+            transform: translateY(0) rotateZ(-2deg);
+    opacity: .5; }
+  66% {
+    -webkit-transform: translateY(0.3125em) rotateZ(2deg);
+            transform: translateY(0.3125em) rotateZ(2deg);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translateY(0) rotateZ(0);
+            transform: translateY(0) rotateZ(0);
+    opacity: 1; } }
+
+@keyframes showSweetToast {
+  0% {
+    -webkit-transform: translateY(-0.625em) rotateZ(2deg);
+            transform: translateY(-0.625em) rotateZ(2deg);
+    opacity: 0; }
+  33% {
+    -webkit-transform: translateY(0) rotateZ(-2deg);
+            transform: translateY(0) rotateZ(-2deg);
+    opacity: .5; }
+  66% {
+    -webkit-transform: translateY(0.3125em) rotateZ(2deg);
+            transform: translateY(0.3125em) rotateZ(2deg);
+    opacity: .7; }
+  100% {
+    -webkit-transform: translateY(0) rotateZ(0);
+            transform: translateY(0) rotateZ(0);
+    opacity: 1; } }
+
+@-webkit-keyframes hideSweetToast {
+  0% {
+    opacity: 1; }
+  33% {
+    opacity: .5; }
+  100% {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+    opacity: 0; } }
+
+@keyframes hideSweetToast {
+  0% {
+    opacity: 1; }
+  33% {
+    opacity: .5; }
+  100% {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+    opacity: 0; } }
+
+@-webkit-keyframes animate-toast-success-tip {
+  0% {
+    top: .5625em;
+    left: .0625em;
+    width: 0; }
+  54% {
+    top: .125em;
+    left: .125em;
+    width: 0; }
+  70% {
+    top: .625em;
+    left: -.25em;
+    width: 1.625em; }
+  84% {
+    top: 1.0625em;
+    left: .75em;
+    width: .5em; }
+  100% {
+    top: 1.125em;
+    left: .1875em;
+    width: .75em; } }
+
+@keyframes animate-toast-success-tip {
+  0% {
+    top: .5625em;
+    left: .0625em;
+    width: 0; }
+  54% {
+    top: .125em;
+    left: .125em;
+    width: 0; }
+  70% {
+    top: .625em;
+    left: -.25em;
+    width: 1.625em; }
+  84% {
+    top: 1.0625em;
+    left: .75em;
+    width: .5em; }
+  100% {
+    top: 1.125em;
+    left: .1875em;
+    width: .75em; } }
+
+@-webkit-keyframes animate-toast-success-long {
+  0% {
+    top: 1.625em;
+    right: 1.375em;
+    width: 0; }
+  65% {
+    top: 1.25em;
+    right: .9375em;
+    width: 0; }
+  84% {
+    top: .9375em;
+    right: 0;
+    width: 1.125em; }
+  100% {
+    top: .9375em;
+    right: .1875em;
+    width: 1.375em; } }
+
+@keyframes animate-toast-success-long {
+  0% {
+    top: 1.625em;
+    right: 1.375em;
+    width: 0; }
+  65% {
+    top: 1.25em;
+    right: .9375em;
+    width: 0; }
+  84% {
+    top: .9375em;
+    right: 0;
+    width: 1.125em; }
+  100% {
+    top: .9375em;
+    right: .1875em;
+    width: 1.375em; } }
+
+body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+  overflow-y: hidden; }
+
+body.swal2-height-auto {
+  height: auto !important; }
+
+body.swal2-no-backdrop .swal2-shown {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  background-color: transparent; }
+  body.swal2-no-backdrop .swal2-shown > .swal2-modal {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  body.swal2-no-backdrop .swal2-shown.swal2-top {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  body.swal2-no-backdrop .swal2-shown.swal2-top-start, body.swal2-no-backdrop .swal2-shown.swal2-top-left {
+    top: 0;
+    left: 0; }
+  body.swal2-no-backdrop .swal2-shown.swal2-top-end, body.swal2-no-backdrop .swal2-shown.swal2-top-right {
+    top: 0;
+    right: 0; }
+  body.swal2-no-backdrop .swal2-shown.swal2-center {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  body.swal2-no-backdrop .swal2-shown.swal2-center-start, body.swal2-no-backdrop .swal2-shown.swal2-center-left {
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  body.swal2-no-backdrop .swal2-shown.swal2-center-end, body.swal2-no-backdrop .swal2-shown.swal2-center-right {
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  body.swal2-no-backdrop .swal2-shown.swal2-bottom {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  body.swal2-no-backdrop .swal2-shown.swal2-bottom-start, body.swal2-no-backdrop .swal2-shown.swal2-bottom-left {
+    bottom: 0;
+    left: 0; }
+  body.swal2-no-backdrop .swal2-shown.swal2-bottom-end, body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
+    right: 0;
+    bottom: 0; }
+
+.swal2-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  z-index: 1060;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
+  .swal2-container.swal2-top {
+    align-items: flex-start; }
+  .swal2-container.swal2-top-start, .swal2-container.swal2-top-left {
+    align-items: flex-start;
+    justify-content: flex-start; }
+  .swal2-container.swal2-top-end, .swal2-container.swal2-top-right {
+    align-items: flex-start;
+    justify-content: flex-end; }
+  .swal2-container.swal2-center {
+    align-items: center; }
+  .swal2-container.swal2-center-start, .swal2-container.swal2-center-left {
+    align-items: center;
+    justify-content: flex-start; }
+  .swal2-container.swal2-center-end, .swal2-container.swal2-center-right {
+    align-items: center;
+    justify-content: flex-end; }
+  .swal2-container.swal2-bottom {
+    align-items: flex-end; }
+  .swal2-container.swal2-bottom-start, .swal2-container.swal2-bottom-left {
+    align-items: flex-end;
+    justify-content: flex-start; }
+  .swal2-container.swal2-bottom-end, .swal2-container.swal2-bottom-right {
+    align-items: flex-end;
+    justify-content: flex-end; }
+  .swal2-container.swal2-grow-fullscreen > .swal2-modal {
+    display: flex !important;
+    flex: 1;
+    align-self: stretch;
+    justify-content: center; }
+  .swal2-container.swal2-grow-row > .swal2-modal {
+    display: flex !important;
+    flex: 1;
+    align-content: center;
+    justify-content: center; }
+  .swal2-container.swal2-grow-column {
+    flex: 1;
+    flex-direction: column; }
+    .swal2-container.swal2-grow-column.swal2-top, .swal2-container.swal2-grow-column.swal2-center, .swal2-container.swal2-grow-column.swal2-bottom {
+      align-items: center; }
+    .swal2-container.swal2-grow-column.swal2-top-start, .swal2-container.swal2-grow-column.swal2-center-start, .swal2-container.swal2-grow-column.swal2-bottom-start, .swal2-container.swal2-grow-column.swal2-top-left, .swal2-container.swal2-grow-column.swal2-center-left, .swal2-container.swal2-grow-column.swal2-bottom-left {
+      align-items: flex-start; }
+    .swal2-container.swal2-grow-column.swal2-top-end, .swal2-container.swal2-grow-column.swal2-center-end, .swal2-container.swal2-grow-column.swal2-bottom-end, .swal2-container.swal2-grow-column.swal2-top-right, .swal2-container.swal2-grow-column.swal2-center-right, .swal2-container.swal2-grow-column.swal2-bottom-right {
+      align-items: flex-end; }
+    .swal2-container.swal2-grow-column > .swal2-modal {
+      display: flex !important;
+      flex: 1;
+      align-content: center;
+      justify-content: center; }
+  .swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen) > .swal2-modal {
+    margin: auto; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .swal2-container .swal2-modal {
+      margin: 0 !important; } }
+  .swal2-container.swal2-fade {
+    transition: background-color .1s; }
+  .swal2-container.swal2-shown {
+    background-color: rgba(0, 0, 0, 0.4); }
+
+.swal2-popup {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  width: 32em;
+  max-width: 100%;
+  padding: 1.25em;
+  border-radius: 0.3125em;
+  background: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box; }
+  .swal2-popup:focus {
+    outline: none; }
+  .swal2-popup.swal2-loading {
+    overflow-y: hidden; }
+  .swal2-popup .swal2-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .swal2-popup .swal2-title {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 0.4em;
+    padding: 0;
+    color: #595959;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word; }
+  .swal2-popup .swal2-actions {
+    align-items: center;
+    justify-content: center;
+    margin: 1.25em auto 0;
+    z-index: 1; }
+    .swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {
+      opacity: .4; }
+    .swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); }
+    .swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
+    .swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm {
+      width: 2.5em;
+      height: 2.5em;
+      margin: .46875em;
+      padding: 0;
+      border: .25em solid transparent;
+      border-radius: 100%;
+      border-color: transparent;
+      background-color: transparent !important;
+      color: transparent;
+      cursor: default;
+      box-sizing: border-box;
+      -webkit-animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+              animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
+    .swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel {
+      margin-right: 30px;
+      margin-left: 30px; }
+    .swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-left: 5px;
+      border: 3px solid #999999;
+      border-radius: 50%;
+      border-right-color: transparent;
+      box-shadow: 1px 1px 1px #fff;
+      content: '';
+      -webkit-animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+              animation: swal2-rotate-loading 1.5s linear 0s infinite normal; }
+  .swal2-popup .swal2-styled {
+    margin: 0 .3125em;
+    padding: .625em 2em;
+    font-weight: 500;
+    box-shadow: none; }
+    .swal2-popup .swal2-styled:not([disabled]) {
+      cursor: pointer; }
+    .swal2-popup .swal2-styled.swal2-confirm {
+      border: 0;
+      border-radius: 0.25em;
+      background: initial;
+      background-color: #3085d6;
+      color: #fff;
+      font-size: 1.0625em; }
+    .swal2-popup .swal2-styled.swal2-cancel {
+      border: 0;
+      border-radius: 0.25em;
+      background: initial;
+      background-color: #aaa;
+      color: #fff;
+      font-size: 1.0625em; }
+    .swal2-popup .swal2-styled:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(50, 100, 150, 0.4); }
+    .swal2-popup .swal2-styled::-moz-focus-inner {
+      border: 0; }
+  .swal2-popup .swal2-footer {
+    justify-content: center;
+    margin: 1.25em 0 0;
+    padding: 1em 0 0;
+    border-top: 1px solid #eee;
+    color: #545454;
+    font-size: 1em; }
+  .swal2-popup .swal2-image {
+    max-width: 100%;
+    margin: 1.25em auto; }
+  .swal2-popup .swal2-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0;
+    transition: color 0.1s ease-out;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    color: #cccccc;
+    font-family: serif;
+    font-size: 2.5em;
+    line-height: 1.2;
+    cursor: pointer;
+    overflow: hidden; }
+    .swal2-popup .swal2-close:hover {
+      -webkit-transform: none;
+              transform: none;
+      color: #f27474; }
+  .swal2-popup > .swal2-input,
+  .swal2-popup > .swal2-file,
+  .swal2-popup > .swal2-textarea,
+  .swal2-popup > .swal2-select,
+  .swal2-popup > .swal2-radio,
+  .swal2-popup > .swal2-checkbox {
+    display: none; }
+  .swal2-popup .swal2-content {
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: #545454;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: normal;
+    z-index: 1;
+    word-wrap: break-word; }
+  .swal2-popup #swal2-content {
+    text-align: center; }
+  .swal2-popup .swal2-input,
+  .swal2-popup .swal2-file,
+  .swal2-popup .swal2-textarea,
+  .swal2-popup .swal2-select,
+  .swal2-popup .swal2-radio,
+  .swal2-popup .swal2-checkbox {
+    margin: 1em auto; }
+  .swal2-popup .swal2-input,
+  .swal2-popup .swal2-file,
+  .swal2-popup .swal2-textarea {
+    width: 100%;
+    transition: border-color .3s, box-shadow .3s;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.1875em;
+    font-size: 1.125em;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box; }
+    .swal2-popup .swal2-input.swal2-inputerror,
+    .swal2-popup .swal2-file.swal2-inputerror,
+    .swal2-popup .swal2-textarea.swal2-inputerror {
+      border-color: #f27474 !important;
+      box-shadow: 0 0 2px #f27474 !important; }
+    .swal2-popup .swal2-input:focus,
+    .swal2-popup .swal2-file:focus,
+    .swal2-popup .swal2-textarea:focus {
+      border: 1px solid #b4dbed;
+      outline: none;
+      box-shadow: 0 0 3px #c4e6f5; }
+    .swal2-popup .swal2-input::-webkit-input-placeholder,
+    .swal2-popup .swal2-file::-webkit-input-placeholder,
+    .swal2-popup .swal2-textarea::-webkit-input-placeholder {
+      color: #cccccc; }
+    .swal2-popup .swal2-input:-ms-input-placeholder,
+    .swal2-popup .swal2-file:-ms-input-placeholder,
+    .swal2-popup .swal2-textarea:-ms-input-placeholder {
+      color: #cccccc; }
+    .swal2-popup .swal2-input::-ms-input-placeholder,
+    .swal2-popup .swal2-file::-ms-input-placeholder,
+    .swal2-popup .swal2-textarea::-ms-input-placeholder {
+      color: #cccccc; }
+    .swal2-popup .swal2-input::placeholder,
+    .swal2-popup .swal2-file::placeholder,
+    .swal2-popup .swal2-textarea::placeholder {
+      color: #cccccc; }
+  .swal2-popup .swal2-range input {
+    width: 80%; }
+  .swal2-popup .swal2-range output {
+    width: 20%;
+    font-weight: 600;
+    text-align: center; }
+  .swal2-popup .swal2-range input,
+  .swal2-popup .swal2-range output {
+    height: 2.625em;
+    margin: 1em auto;
+    padding: 0;
+    font-size: 1.125em;
+    line-height: 2.625em; }
+  .swal2-popup .swal2-input {
+    height: 2.625em;
+    padding: 0.75em; }
+    .swal2-popup .swal2-input[type='number'] {
+      max-width: 10em; }
+  .swal2-popup .swal2-file {
+    font-size: 1.125em; }
+  .swal2-popup .swal2-textarea {
+    height: 6.75em;
+    padding: 0.75em; }
+  .swal2-popup .swal2-select {
+    min-width: 50%;
+    max-width: 100%;
+    padding: .375em .625em;
+    color: #545454;
+    font-size: 1.125em; }
+  .swal2-popup .swal2-radio,
+  .swal2-popup .swal2-checkbox {
+    align-items: center;
+    justify-content: center; }
+    .swal2-popup .swal2-radio label,
+    .swal2-popup .swal2-checkbox label {
+      margin: 0 .6em;
+      font-size: 1.125em; }
+    .swal2-popup .swal2-radio input,
+    .swal2-popup .swal2-checkbox input {
+      margin: 0 .4em; }
+  .swal2-popup .swal2-validationerror {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625em;
+    background: #f0f0f0;
+    color: #666666;
+    font-size: 1em;
+    font-weight: 300;
+    overflow: hidden; }
+    .swal2-popup .swal2-validationerror::before {
+      display: inline-block;
+      width: 1.5em;
+      min-width: 1.5em;
+      height: 1.5em;
+      margin: 0 .625em;
+      border-radius: 50%;
+      background-color: #f27474;
+      color: #fff;
+      font-weight: 600;
+      line-height: 1.5em;
+      text-align: center;
+      content: '!';
+      zoom: normal; }
+
+@supports (-ms-accelerator: true) {
+  .swal2-range input {
+    width: 100% !important; }
+  .swal2-range output {
+    display: none; } }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .swal2-range input {
+    width: 100% !important; }
+  .swal2-range output {
+    display: none; } }
+
+@-moz-document url-prefix() {
+  .swal2-close:focus {
+    outline: 2px solid rgba(50, 100, 150, 0.4); } }
+
+.swal2-icon {
+  position: relative;
+  justify-content: center;
+  width: 5em;
+  height: 5em;
+  margin: 1.25em auto 1.875em;
+  border: .25em solid transparent;
+  border-radius: 50%;
+  line-height: 5em;
+  cursor: default;
+  box-sizing: content-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  zoom: normal; }
+  .swal2-icon-text {
+    font-size: 3.75em; }
+  .swal2-icon.swal2-error {
+    border-color: #f27474; }
+    .swal2-icon.swal2-error .swal2-x-mark {
+      position: relative;
+      flex-grow: 1; }
+    .swal2-icon.swal2-error [class^='swal2-x-mark-line'] {
+      display: block;
+      position: absolute;
+      top: 2.3125em;
+      width: 2.9375em;
+      height: .3125em;
+      border-radius: .125em;
+      background-color: #f27474; }
+      .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='left'] {
+        left: 1.0625em;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .swal2-icon.swal2-error [class^='swal2-x-mark-line'][class$='right'] {
+        right: 1em;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+  .swal2-icon.swal2-warning {
+    border-color: #facea8;
+    color: #f8bb86; }
+  .swal2-icon.swal2-info {
+    border-color: #9de0f6;
+    color: #3fc3ee; }
+  .swal2-icon.swal2-question {
+    border-color: #c9dae1;
+    color: #87adbd; }
+  .swal2-icon.swal2-success {
+    border-color: #a5dc86; }
+    .swal2-icon.swal2-success [class^='swal2-success-circular-line'] {
+      position: absolute;
+      width: 3.75em;
+      height: 7.5em;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      border-radius: 50%; }
+      .swal2-icon.swal2-success [class^='swal2-success-circular-line'][class$='left'] {
+        top: -.4375em;
+        left: -2.0635em;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 3.75em 3.75em;
+                transform-origin: 3.75em 3.75em;
+        border-radius: 7.5em 0 0 7.5em; }
+      .swal2-icon.swal2-success [class^='swal2-success-circular-line'][class$='right'] {
+        top: -.6875em;
+        left: 1.875em;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        -webkit-transform-origin: 0 3.75em;
+                transform-origin: 0 3.75em;
+        border-radius: 0 7.5em 7.5em 0; }
+    .swal2-icon.swal2-success .swal2-success-ring {
+      position: absolute;
+      top: -.25em;
+      left: -.25em;
+      width: 100%;
+      height: 100%;
+      border: 0.25em solid rgba(165, 220, 134, 0.3);
+      border-radius: 50%;
+      z-index: 2;
+      box-sizing: content-box; }
+    .swal2-icon.swal2-success .swal2-success-fix {
+      position: absolute;
+      top: .5em;
+      left: 1.625em;
+      width: .4375em;
+      height: 5.625em;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      z-index: 1; }
+    .swal2-icon.swal2-success [class^='swal2-success-line'] {
+      display: block;
+      position: absolute;
+      height: .3125em;
+      border-radius: .125em;
+      background-color: #a5dc86;
+      z-index: 2; }
+      .swal2-icon.swal2-success [class^='swal2-success-line'][class$='tip'] {
+        top: 2.875em;
+        left: .875em;
+        width: 1.5625em;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .swal2-icon.swal2-success [class^='swal2-success-line'][class$='long'] {
+        top: 2.375em;
+        right: .5em;
+        width: 2.9375em;
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+
+.swal2-progresssteps {
+  align-items: center;
+  margin: 0 0 1.25em;
+  padding: 0;
+  font-weight: 600; }
+  .swal2-progresssteps li {
+    display: inline-block;
+    position: relative; }
+  .swal2-progresssteps .swal2-progresscircle {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background: #3085d6;
+    color: #fff;
+    line-height: 2em;
+    text-align: center;
+    z-index: 20; }
+    .swal2-progresssteps .swal2-progresscircle:first-child {
+      margin-left: 0; }
+    .swal2-progresssteps .swal2-progresscircle:last-child {
+      margin-right: 0; }
+    .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep {
+      background: #3085d6; }
+      .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progresscircle {
+        background: #add8e6; }
+      .swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep ~ .swal2-progressline {
+        background: #add8e6; }
+  .swal2-progresssteps .swal2-progressline {
+    width: 2.5em;
+    height: .4em;
+    margin: 0 -1px;
+    background: #3085d6;
+    z-index: 10; }
+
+[class^='swal2'] {
+  -webkit-tap-highlight-color: transparent; }
+
+.swal2-show {
+  -webkit-animation: swal2-show 0.3s;
+          animation: swal2-show 0.3s; }
+  .swal2-show.swal2-noanimation {
+    -webkit-animation: none;
+            animation: none; }
+
+.swal2-hide {
+  -webkit-animation: swal2-hide 0.15s forwards;
+          animation: swal2-hide 0.15s forwards; }
+  .swal2-hide.swal2-noanimation {
+    -webkit-animation: none;
+            animation: none; }
+
+[dir='rtl'] .swal2-close {
+  right: auto;
+  left: 0; }
+
+.swal2-animate-success-icon .swal2-success-line-tip {
+  -webkit-animation: swal2-animate-success-line-tip 0.75s;
+          animation: swal2-animate-success-line-tip 0.75s; }
+
+.swal2-animate-success-icon .swal2-success-line-long {
+  -webkit-animation: swal2-animate-success-line-long 0.75s;
+          animation: swal2-animate-success-line-long 0.75s; }
+
+.swal2-animate-success-icon .swal2-success-circular-line-right {
+  -webkit-animation: swal2-rotate-success-circular-line 4.25s ease-in;
+          animation: swal2-rotate-success-circular-line 4.25s ease-in; }
+
+.swal2-animate-error-icon {
+  -webkit-animation: swal2-animate-error-icon 0.5s;
+          animation: swal2-animate-error-icon 0.5s; }
+  .swal2-animate-error-icon .swal2-x-mark {
+    -webkit-animation: swal2-animate-error-x-mark 0.5s;
+            animation: swal2-animate-error-x-mark 0.5s; }
+
+@-webkit-keyframes swal2-rotate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes swal2-rotate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }</style><title style="-moz-user-select: text;">NSERC consent form | DocHub</title><script src="NSERC%20consent%20form%20|%20DocHub_files/api.js" async="" defer="defer" gapi_processed="true" style="-moz-user-select: text;"></script><style style="-moz-user-select: text;"></style><link rel="stylesheet" href="NSERC%20consent%20form%20|%20DocHub_files/css.css" type="text/css" media="screen" style="-moz-user-select: text;"><style id="PDFJS_FONT_STYLE_TAG_d0" style="-moz-user-select: text;"></style></head> <body class="dh-body ember-application" style="background: rgb(242, 242, 242) none repeat scroll 0% 0%; cursor: auto; -moz-user-select: text;"> <script src="NSERC%20consent%20form%20|%20DocHub_files/vendor-67c684c2abb1ad541939f61dd851aef5.js" crossorigin="anonymous" style="-moz-user-select: text;"></script> <script src="NSERC%20consent%20form%20|%20DocHub_files/dochub-b27093118c9b5e72b181d8fd14487ae6.js" crossorigin="anonymous" style="-moz-user-select: text;"></script> <div id="ember-basic-dropdown-wormhole" style="-moz-user-select: text;"></div>  <div class="ember-view" id="ember4" style="-moz-user-select: text;"><!---->
+<div id="document-wrapper" style="-moz-user-select: text;">
+  <div id="ember11" style="touch-action: manipulation; background-color: rgb(66, 133, 244); -moz-user-select: text;" class="dh-document-toolbar dh-sign-request-bar-focus-area two-row ember-view"><nav class="navbar navbar-default" role="navigation" style="-moz-user-select: text;">
+  <div id="js-toolbar" class="dh-document-bars" style="-moz-user-select: text;">
+
+    <div class="navbar-header navbar-document" style="-moz-user-select: text;">
+
+      <div class="collapse navbar-collapse navbar-right hidden-xs" style="-moz-user-select: text;">
+
+        <ul class="nav navbar-nav pull-right" style="-moz-user-select: text;">
+            <li id="ember12" class="dh-document-file-menu dropdown file-menu ember-view" style="-moz-user-select: text;">
+  <a class="dropdown-toggle" data-toggle="dropdown" style="touch-action: manipulation; -moz-user-select: text;">
+        <span class="fa fa-bars" style="-moz-user-select: text;"></span>&nbsp;<span class="caret" style="-moz-user-select: text;"></span>
+  </a>
+
+<ul class="dropdown-menu dropdown-menu-right" role="menu" style="-moz-user-select: text;">
+<!---->     <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+       <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-13="13">Send</a>
+       <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+           <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-14="14">Email Attachment</a></li>
+           <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-15="15">Sign Request</a></li>
+           <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-16="16">Fax</a></li>
+       </ul>
+     </li>
+
+        <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+          <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-17="17">Actions</a>
+          <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+            <!----><!----><!----><!----><!---->  <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-19="19">Make a Copy...</a></li>
+    <li style="-moz-user-select: text;">
+      <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-20="20">
+        Convert to Template
+      </a>
+    </li>
+    <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+      <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-21="21">Rotate Pages</a>
+      <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+        <li style="-moz-user-select: text;"><a tablindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-22="22">Rotate 180°</a></li>
+        <li style="-moz-user-select: text;"><a tablindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-23="23">Rotate 90° Clockwise</a></li>
+        <li style="-moz-user-select: text;"><a tablindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-24="24">Rotate 90° Counter-Clockwise</a></li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+      <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-25="25">Append Pages</a>
+      <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+        <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-26="26">Append Blank Page</a></li>
+        <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-27="27">Merge and Append File...</a></li>
+      </ul>
+    </li>
+    <li style="-moz-user-select: text;">
+      <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-28="28">
+        Destroy Document
+      </a>
+    </li>
+<!---->
+
+
+
+  <li id="ember30" style="-moz-user-select: text;" class="ember-view tooltipstered">  <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-31="31">
+    <i class="fa fa-check" style="-moz-user-select: text;"></i>  Toggle Snap to Grid (G)
+  </a>
+
+</li>
+
+
+<!---->
+          </ul>
+        </li>
+
+
+
+
+    <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-32="32">Document Properties</a></li>
+    <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-33="33">
+      <i class="fa fa-user-plus" style="-moz-user-select: text;"></i> Share or send...
+    </a></li>
+
+<!---->
+  <li style="-moz-user-select: text;">
+    <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-34="34">
+      <i class="fa fa-download" style="-moz-user-select: text;"></i> Download / Export...
+    </a>
+  </li>
+
+    <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-35="35"><i class="fa fa-print" style="-moz-user-select: text;"></i> Print...</a></li>
+
+    <li role="presentation" class="divider" style="-moz-user-select: text;"></li>
+    <li class="dropdown-header" style="-moz-user-select: text;"><span style="font-size: 14px; -moz-user-select: text;">
+      Signed in as <strong style="-moz-user-select: text;">kai-tis-me</strong></span><br style="-moz-user-select: text;">
+      <small style="font-size: 11.8px; -moz-user-select: text;">kai.tis.me@gmail.com</small>
+    </li>
+      <li style="-moz-user-select: text;"><a href="https://dochub.com/settings/profile" tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;">User Settings</a></li>
+    <li style="-moz-user-select: text;">
+      <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-36="36"><i class="fa fa-sign-out" style="-moz-user-select: text;"></i> Sign Out</a>
+    </li>
+</ul>
+</li>
+        </ul>
+      </div>
+
+          <div id="ember37" style="background-color: rgb(66, 133, 244); -moz-user-select: text;" class="dh-nav-icon white-dh-icon ember-view"><a href="https://dochub.com/" style="touch-action: manipulation; -moz-user-select: text;">
+  <img src="NSERC%20consent%20form%20|%20DocHub_files/toolbar-logo-b5f96a2d8044c85ad92f7c2e47e8d980.svg" alt="DocHub Dashboard" style="-moz-user-select: text;">
+</a>
+
+
+<!-- {{#if generalUtils.selectedDashboardEntity.isCurrentUser}}
+  <img src='https://cdn.dochub.com/assets/img/logo/toolbar-logo-b5f96a2d8044c85ad92f7c2e47e8d980.svg' class="white-dh-icon">
+{{else}}
+{{/if}} -->
+</div>
+
+          <ul class="nav navbar-nav btn-toolbar pull-right share-button" style="-moz-user-select: text;">
+  <li class="btn-group navbar-btn" data-toggle="tooltip" data-placement="bottom" title="" style="-moz-user-select: text;" data-original-title="Share or send..." aria-describedby="tooltip547235">
+    <button class="btn btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-39="39">
+    <i class="fa fa-user-plus" style="-moz-user-select: text;"></i>
+    </button>
+  </li><div class="tooltip fade bottom" role="tooltip" id="tooltip547235" style="top: 41px; left: 771.342px; display: block;"><div class="tooltip-arrow" style="left: 50%;"></div><div class="tooltip-inner">Share or send...</div></div>
+</ul>
+
+<ul class="nav navbar-nav btn-toolbar pull-right share-button" style="-moz-user-select: text;">
+  <li class="btn-group navbar-btn" data-toggle="tooltip" data-placement="bottom" title="Download / Export..." style="-moz-user-select: text;">
+    <button class="btn btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-40="40">
+    <i class="fa fa-download" style="-moz-user-select: text;"></i>
+    </button>
+  </li>
+</ul>
+
+
+<!---->
+<!---->
+      <div class="pull-right" style="-moz-user-select: text;">
+<div id="ember41" style="-moz-user-select: text;" class="btn-group navbar-btn ember-view tooltipstered">            <a href="https://dochub.com/settings/billing/plans" class="btn btn-link no-focus-ring" style="touch-action: manipulation; -moz-user-select: text;">Upgrade to Pro</a>
+
+</div>
+<!----><!----><!---->      </div>
+
+      <p class="title-text  has-textfield has-status" style="-moz-user-select: text;">
+        <span id="ember42" class="ember-view" style="-moz-user-select: text;">  <input id="ember43" style="touch-action: manipulation; width: 185px; overflow: hidden; -moz-user-select: text;" class="dh-toolbar-title ember-text-field ember-auto-resize ember-view" value="NSERC consent form" type="text">
+<!----><!----></span> <br style="-moz-user-select: text;">
+
+<!---->        <small class="text-muted" style="font-size: 12px; -moz-user-select: text;">Saved</small>
+      </p>
+    </div>
+
+    <div class="collapse navbar-collapse mobile-navbar" style="-moz-user-select: text;">
+      <div class="visible-xs-inline" style="-moz-user-select: text;">
+        <ul class="nav navbar-nav " style="-moz-user-select: text;">
+          <li id="ember44" class="dh-document-file-menu dropdown file-menu ember-view" style="-moz-user-select: text;">
+  <a class="dropdown-toggle" data-toggle="dropdown" style="touch-action: manipulation; -moz-user-select: text;">
+        <span class="fa fa-bars" style="-moz-user-select: text;"></span>&nbsp;<span class="caret" style="-moz-user-select: text;"></span>
+  </a>
+
+<ul class="dropdown-menu dropdown-menu-right" role="menu" style="-moz-user-select: text;">
+<!---->     <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+       <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-45="45">Send</a>
+       <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+           <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-46="46">Email Attachment</a></li>
+           <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-47="47">Sign Request</a></li>
+           <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-48="48">Fax</a></li>
+       </ul>
+     </li>
+
+        <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+          <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-49="49">Actions</a>
+          <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+            <!----><!----><!----><!----><!---->  <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-51="51">Make a Copy...</a></li>
+    <li style="-moz-user-select: text;">
+      <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-52="52">
+        Convert to Template
+      </a>
+    </li>
+    <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+      <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-53="53">Rotate Pages</a>
+      <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+        <li style="-moz-user-select: text;"><a tablindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-54="54">Rotate 180°</a></li>
+        <li style="-moz-user-select: text;"><a tablindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-55="55">Rotate 90° Clockwise</a></li>
+        <li style="-moz-user-select: text;"><a tablindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-56="56">Rotate 90° Counter-Clockwise</a></li>
+      </ul>
+    </li>
+    <li class="dropdown-submenu pull-left-custom" style="-moz-user-select: text;">
+      <a tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-57="57">Append Pages</a>
+      <ul class="dropdown-menu hidden" style="-moz-user-select: text;">
+        <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-58="58">Append Blank Page</a></li>
+        <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-59="59">Merge and Append File...</a></li>
+      </ul>
+    </li>
+    <li style="-moz-user-select: text;">
+      <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-60="60">
+        Destroy Document
+      </a>
+    </li>
+<!---->
+
+
+
+  <li id="ember62" style="-moz-user-select: text;" class="ember-view tooltipstered">  <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-63="63">
+    <i class="fa fa-check" style="-moz-user-select: text;"></i>  Toggle Snap to Grid (G)
+  </a>
+
+</li>
+
+
+<!---->
+          </ul>
+        </li>
+
+
+
+
+    <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-64="64">Document Properties</a></li>
+    <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-65="65">
+      <i class="fa fa-user-plus" style="-moz-user-select: text;"></i> Share or send...
+    </a></li>
+
+<!---->
+  <li style="-moz-user-select: text;">
+    <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-66="66">
+      <i class="fa fa-download" style="-moz-user-select: text;"></i> Download / Export...
+    </a>
+  </li>
+
+    <li style="-moz-user-select: text;"><a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-67="67"><i class="fa fa-print" style="-moz-user-select: text;"></i> Print...</a></li>
+
+    <li role="presentation" class="divider" style="-moz-user-select: text;"></li>
+    <li class="dropdown-header" style="-moz-user-select: text;"><span style="font-size: 14px; -moz-user-select: text;">
+      Signed in as <strong style="-moz-user-select: text;">kai-tis-me</strong></span><br style="-moz-user-select: text;">
+      <small style="font-size: 11.8px; -moz-user-select: text;">kai.tis.me@gmail.com</small>
+    </li>
+      <li style="-moz-user-select: text;"><a href="https://dochub.com/settings/profile" tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;">User Settings</a></li>
+    <li style="-moz-user-select: text;">
+      <a style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-68="68"><i class="fa fa-sign-out" style="-moz-user-select: text;"></i> Sign Out</a>
+    </li>
+</ul>
+</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<!---->
+  <ul id="ember69" class="dh-toolbar dh-btn-toolbar ember-view" style="-moz-user-select: text;">
+<button id="ember70" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">      <i class="fa fa-th" style="-moz-user-select: text;"></i>
+
+
+</button>
+
+<button id="ember71" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">        <i class="fa fa-list-alt" style="-moz-user-select: text;"></i>
+
+
+</button>
+<span class="dh-separator" style="-moz-user-select: text;">
+<button id="ember72" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">      <i class="fa fa-print" style="-moz-user-select: text;"></i>
+
+
+</button></span>
+
+  <span class="dh-separator" style="-moz-user-select: text;">
+<button id="ember73" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view">        <i class="fa fa-undo" style="-moz-user-select: text;"></i>
+
+
+</button>
+<button id="ember74" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn disabled dh-disabled-cursor ember-view">        <i class="fa fa-rotate-right" style="-moz-user-select: text;"></i>
+
+
+</button>  </span>
+
+    <span class="dh-separator" style="-moz-user-select: text;">
+<button id="ember76" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view">      <img src="NSERC%20consent%20form%20|%20DocHub_files/pointer-ff37f3bc7a025d0760414e707c658435.svg" style="-moz-user-select: text;">
+
+
+</button></span>
+
+<button id="ember77" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn active ember-view">    <span class="glyphicon glyphicon-font" style="-moz-user-select: text;"></span>
+
+
+</button>
+<div id="ember78" class="dh-toolbar-dropdown dh-disclosure btn-group ember-view" style="-moz-user-select: text;"><button id="ember79" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view">      <span class="glyphicon glyphicon-pencil dh-select-btn" style="-moz-user-select: text;"></span>
+  
+
+</button>
+<button id="ember80" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view">    <span class="caret" style="-moz-user-select: text;"></span>
+
+
+</button>
+<ul class="dh-dropdown-menu dropdown-menu" style="-moz-user-select: text;">
+<button id="ember82" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">        <span class="glyphicon glyphicon-pencil dh-select-btn" style="-moz-user-select: text;"></span>
+      
+</button><button id="ember84" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">        <i class="fa fa-square-o dh-fa dh-select-btn" aria-hidden="true" style="-moz-user-select: text;"></i>
+
+</button><button id="ember86" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">        <i class="fa fa-circle-o dh-fa dh-select-btn" aria-hidden="true" style="-moz-user-select: text;"></i>
+
+</button><button id="ember88" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">        <i class="fa" aria-hidden="true" style="-moz-user-select: text;"><img src="NSERC%20consent%20form%20|%20DocHub_files/line-d023a9190aa8f9f4823d6f7f44240565.svg" class="dh-select-btn" style="-moz-user-select: text;"></i>
+
+</button><button id="ember90" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">        <i class="fa fa-long-arrow-right dh-fa dh-select-btn" aria-hidden="true" style="-moz-user-select: text;"></i>
+
+</button></ul>
+</div>
+
+<div id="ember91" class="dh-toolbar-dropdown btn-group dh-disclosure ember-view" style="-moz-user-select: text;"><button id="ember92" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">      <img src="NSERC%20consent%20form%20|%20DocHub_files/highlight-tool-a61c9e3dbaa58411d1ec128510947ef1.svg" class="dh-select-btn" style="-moz-user-select: text;">
+
+
+</button>
+<button id="ember93" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view tooltipstered">      <span class="caret" style="-moz-user-select: text;"></span>
+
+
+</button>  <ul class="dh-dropdown-menu dropdown-menu" style="-moz-user-select: text;">
+<button id="ember95" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">          <i class="fa " aria-hidden="true" style="-moz-user-select: text;"><img src="NSERC%20consent%20form%20|%20DocHub_files/highlight-tool-a61c9e3dbaa58411d1ec128510947ef1.svg" class="dh-select-btn" style="-moz-user-select: text;"></i>
+
+</button><button id="ember97" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">          <i class="fa fa-underline dh-fa-highlight-icons locked dh-fa dh-select-btn" aria-hidden="true" style="-moz-user-select: text;"></i>
+
+</button><button id="ember99" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn dh-toolbar-dropdown-item ember-view tooltipstered">          <i class="fa fa-strikethrough dh-fa-highlight-icons locked dh-fa dh-select-btn" aria-hidden="true" style="-moz-user-select: text;"></i>
+
+</button>  </ul>
+</div>
+
+<button id="ember100" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <span class="glyphicon glyphicon-comment" style="-moz-user-select: text;"></span>
+
+
+</button>
+<button id="ember101" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <i class="fa fa-eraser dh-fa-highlight-icons dh-select-btn" aria-hidden="true" style="-moz-user-select: text;"></i>
+
+
+</button>
+<div id="toolbar-stamp-selector-button" class="dh-toolbar-dropdown dh-disclosure btn-group toolbar-stamp-selector ember-view" style="-moz-user-select: text;"><button id="ember103" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <i class="fa fa-check" style="font-size: 16px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+
+
+</button>
+<button id="ember104" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view tooltipstered">    <span class="caret" style="-moz-user-select: text;"></span>
+
+
+</button>
+<div class="dropdown-menu dh-stamp-dropdown dh-autoposition-dropdown" style="-moz-user-select: text;">
+  <div class="stamp-wrap" style="-moz-user-select: text;">
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-105="105">
+        <i class="fa fa-check" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-106="106">
+        <i class="fa fa-exclamation-triangle" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-107="107">
+        <i class="fa fa-clock-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-108="108">
+        <i class="fa fa-times" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-109="109">
+        <i class="fa fa-flag" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-110="110">
+        <i class="fa fa-circle-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-111="111">
+        <i class="fa fa-check-square-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-112="112">
+        <i class="fa fa-pencil-square-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-113="113">
+        <i class="fa fa-frown-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-114="114">
+        <i class="fa fa-smile-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-115="115">
+        <i class="fa fa-pencil" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-116="116">
+        <i class="fa fa-heart-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-117="117">
+        <i class="fa fa-star" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-118="118">
+        <i class="fa fa-question" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-119="119">
+        <i class="fa fa-check-square" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-120="120">
+        <i class="fa fa-square-o" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-121="121">
+        <i class="fa fa-arrow-circle-left" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-122="122">
+        <i class="fa fa-arrow-circle-right" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-123="123">
+        <i class="fa fa-arrow-left" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+      <button class="btn dh-stamp-button btn-default" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-124="124">
+        <i class="fa fa-arrow-right" style="font-size: 20px; color: rgb(51, 51, 51); -moz-user-select: text;"></i>
+      </button>
+  </div>
+  <hr style="margin: 0px; -moz-user-select: text;">
+  <button class="btn btn-link" style="padding: 3px; margin: 0px 2px; touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-125="125">
+    Customize...
+  </button>
+</div>
+</div>
+
+<div id="ember126" style="-moz-user-select: text;" class="dh-toolbar-btn insert-image ember-view tooltipstered"><div id="ember127" class="droppable dh-droplet-area ember-view" style="-moz-user-select: text;">
+  <div class="file-upload " style="-moz-user-select: text;">
+    <!-- Resets input after 1st upload -->
+      <span class="fa fa-image" style="-moz-user-select: text;"></span>
+      <input id="ember128" style="touch-action: manipulation; -moz-user-select: text;" class="files ember-view" type="file">
+
+  </div>
+
+
+<!----></div></div>
+
+<div id="ember129" class="dh-toolbar-dropdown btn-group ember-view" style="-moz-user-select: text;"><button id="ember130" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view tooltipstered">  Sign
+
+
+</button>
+<ul class="dh-dropdown-menu signature-selector dropdown-menu dh-autoposition-dropdown" style="-moz-user-select: text;">
+  <li class="dh-toolbar-dropdown-item" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-131="131">
+    Create Signature...
+  </li>
+
+
+<!---->
+  <li class="divider" style="margin: 3px 0px; -moz-user-select: text;"></li>
+<!---->  <li style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-132="132">
+    <div id="ember133" draggable="true" class="dh-user-signature text-center ember-view" style="-moz-user-select: text;">8/23/2018
+</div>
+  </li>
+
+    <li role="presentation" class="dropdown-header" style="-moz-user-select: text;">
+      You have zero saved signatures.  Create a signature, then drag &amp; drop it from here.
+    </li>
+</ul>
+</div>
+
+
+<div class="dh-separator" style="-moz-user-select: text;">  <select id="ember494" style="-moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">  <!---->
+  <option style="-moz-user-select: text;">4</option>
+  <option style="-moz-user-select: text;">6</option>
+  <option style="-moz-user-select: text;">8</option>
+  <option style="-moz-user-select: text;">9</option>
+  <option style="-moz-user-select: text;">10</option>
+  <option style="-moz-user-select: text;">11</option>
+  <option style="-moz-user-select: text;" selected="selected">12</option>
+  <option style="-moz-user-select: text;">14</option>
+  <option style="-moz-user-select: text;">18</option>
+  <option style="-moz-user-select: text;">24</option>
+  <option style="-moz-user-select: text;">30</option>
+  <option style="-moz-user-select: text;">36</option>
+  <option style="-moz-user-select: text;">48</option>
+  <option style="-moz-user-select: text;">60</option>
+  <option style="-moz-user-select: text;">72</option>
+  <option style="-moz-user-select: text;">96</option>
+</select>
+  <span id="ember495" class="dh-toolbar-dropdown ember-view" style="-moz-user-select: text;"><button id="ember496" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view tooltipstered">    <span style="-moz-user-select: text;">Helvetica</span>
+
+
+</button>
+<ul class="dh-dropdown-menu scrollable-menu dropdown-menu" role="menu" style="min-width: 140px; max-height: 260px; -moz-user-select: text;">
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-498="498">
+      <span style="font-family: Courier New; -moz-user-select: text;">Courier New</span>
+      <!---->
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-500="500">
+      <span style="font-family: Helvetica; -moz-user-select: text;">Helvetica</span>
+      <!---->
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-502="502">
+      <span style="font-family: Times New Roman; -moz-user-select: text;">Times New Roman</span>
+      <!---->
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-504="504">
+      <span style="font-family: Amaranth; -moz-user-select: text;">Amaranth</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-506="506">
+      <span style="font-family: Archivo Narrow; -moz-user-select: text;">Archivo Narrow</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-508="508">
+      <span style="font-family: Arvo; -moz-user-select: text;">Arvo</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-510="510">
+      <span style="font-family: Cabin; -moz-user-select: text;">Cabin</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-512="512">
+      <span style="-moz-user-select: text;">Exo 2</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-514="514">
+      <span style="font-family: Josefin Sans; -moz-user-select: text;">Josefin Sans</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-516="516">
+      <span style="font-family: Lobster Two; -moz-user-select: text;">Lobster Two</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-518="518">
+      <span style="font-family: Noto Sans; -moz-user-select: text;">Noto Sans</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-520="520">
+      <span style="font-family: Open Sans; -moz-user-select: text;">Open Sans</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-522="522">
+      <span style="font-family: Philosopher; -moz-user-select: text;">Philosopher</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-524="524">
+      <span style="font-family: Playfair Display; -moz-user-select: text;">Playfair Display</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-526="526">
+      <span style="font-family: PT Sans; -moz-user-select: text;">PT Sans</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-528="528">
+      <span style="font-family: PT Serif; -moz-user-select: text;">PT Serif</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+    <li style="width: 100%; -moz-user-select: text;" class="dh-toolbar-dropdown-item" data-ember-action="" data-ember-action-530="530">
+      <span style="font-family: Roboto Mono; -moz-user-select: text;">Roboto Mono</span>
+      <i class="fa fa-lock" style="color: orange; -moz-user-select: text;"></i>
+    </li>
+</ul>
+</span>
+  <span id="ember531" class="dh-toolbar-dropdown dh-color-selector ember-view" style="-moz-user-select: text;"><button id="ember532" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view tooltipstered">    <span class="dh-colorselector-selected" style="background: rgb(0, 0, 0) none repeat scroll 0% 0%; -moz-user-select: text;"></span>
+
+
+</button>
+<ul class="dh-dropdown-menu dropdown-menu" style="-moz-user-select: text;">
+    <div id="ember533" style="touch-action: manipulation; -moz-user-select: text;" class="dh-bootstrap-colorpicker ember-view colorpicker-element"><div class="input-group input-group-sm" style="-moz-user-select: text;">
+  <span class="input-group-addon" style="background-color: rgb(0, 0, 0); -moz-user-select: text;">Hex</span>
+  <input class="form-control" style="-moz-user-select: text;" value="#000000" type="text">
+</div>
+
+<div class="colorpicker dropdown-menu colorpicker-inline colorpicker-visible colorpicker-right colorpicker-no-arrow" style="-moz-user-select: text;"><div class="colorpicker-saturation" style="background-color: rgb(255, 0, 0); -moz-user-select: text;"><i style="top: 100px; left: 0px; -moz-user-select: text;"><b style="-moz-user-select: text;"></b></i></div><div class="colorpicker-hue" style="-moz-user-select: text;"><i style="top: 100px; -moz-user-select: text;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(0, 0, 0); -moz-user-select: text;"><i style="top: 0px; -moz-user-select: text;"></i></div><div class="colorpicker-color" style="background-color: rgb(0, 0, 0); -moz-user-select: text;"><div style="background-color: rgb(0, 0, 0); -moz-user-select: text;"></div></div><div class="colorpicker-selectors colorpicker-visible" style="-moz-user-select: text;"><i class="colorpicker-selectors-color" style="background-color: rgb(221, 221, 221); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(0, 0, 0); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(255, 255, 255); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(237, 70, 109); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(240, 65, 36); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(252, 101, 34); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(255, 244, 80); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(95, 226, 67); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(18, 128, 20); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(59, 143, 247); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(6, 17, 140); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(5, 12, 117); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(153, 153, 153); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(102, 102, 102); -moz-user-select: text;"></i><i class="colorpicker-selectors-color" style="background-color: rgb(51, 51, 51); -moz-user-select: text;"></i></div></div></div>
+</ul>
+</span>
+  <span id="ember534" class="dh-toolbar-dropdown ember-view" style="-moz-user-select: text;"><button id="ember535" style="touch-action: manipulation; -moz-user-select: text;" aria-haspopup="" data-toggle="dropdown" class="dh-toolbar-btn ember-view tooltipstered">    <span class="fa fa-text-height" style="-moz-user-select: text;"></span>
+
+
+</button>
+<ul class="dh-dropdown-menu dropdown-menu dropdown-menu-right" style="-moz-user-select: text;">
+  <input id="ember536" step=".1" min="1" max="3" class="form-control   ember-text-field ember-view" style="-moz-user-select: text;" value="1" type="number">
+</ul>
+</span>
+</div>  <div id="ember537" class="dh-separator ember-view" style="-moz-user-select: text;"><button id="ember538" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn active ember-view tooltipstered">    <span class="glyphicon glyphicon-align-left" style="-moz-user-select: text;"></span>
+  <input name="textAlignOptions" id="taLeft" autocomplete="off" style="-moz-user-select: text;" checked="checked" type="radio">
+
+
+</button>
+<button id="ember539" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <span class="glyphicon glyphicon-align-center" style="-moz-user-select: text;"></span>
+  <input name="textAlignOptions" id="taCenter" autocomplete="off" style="-moz-user-select: text;" type="radio">
+
+
+</button>
+<button id="ember540" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <span class="glyphicon glyphicon-align-right" style="-moz-user-select: text;"></span>
+  <input name="textAlignOptions" id="taRight" autocomplete="off" style="-moz-user-select: text;" type="radio">
+
+
+</button></div>
+  <div id="ember541" class="dh-separator ember-view" style="-moz-user-select: text;"><button id="ember542" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <i class="fa fa-bold" style="-moz-user-select: text;"></i>
+
+
+</button>
+<button id="ember543" style="touch-action: manipulation; -moz-user-select: text;" class="dh-toolbar-btn ember-view tooltipstered">    <i class="fa fa-italic" style="-moz-user-select: text;"></i>
+
+
+</button></div>
+<div class="dh-separator" style="-moz-user-select: text;"><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></div>
+
+</ul>
+
+<!---->
+<div id="ember135" class="dh-flash-message-queue dh-fixed-flash-msgs message-style-editor ember-view" style="-moz-user-select: text;"><!----></div>
+
+<style style="-moz-user-select: text;"> .ui-selectable-helper{ height:100%; width:100%; background:rgba(156, 190, 229, 0.28); border:1px dashed blue; } .dh-page-text{ cursor: inherit; } </style>
+</div>
+
+  <div class="flex-body" style="-moz-user-select: text;">
+        <div class="main-area" style="-moz-user-select: text;">
+
+<!---->
+<!---->
+<div class="dh-viewport-wrapper" style="-moz-user-select: text;">
+  <div id="ember139" style="touch-action: none; -moz-user-select: text;" tabindex="-1" class="dh-viewport no-focus-ring ember-view">
+<div id="ember140" style="touch-action: manipulation; -moz-user-select: text;" class="dh-fixed-controls affix ember-view">
+<!---->
+  <div id="ember141" class="ember-view" style="-moz-user-select: text;">
+<p class="btn-group-vertical" style="-moz-user-select: text;">
+  <button class="btn btn-default no-focus-ring" data-toggle="tooltip" data-placement="right" data-container="#js-toolbar" title="Zoom In" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-142="142">
+    <span class="glyphicon glyphicon-zoom-in" style="-moz-user-select: text;"></span>
+  </button>
+  <button class="btn btn-default no-focus-ring" data-toggle="tooltip" data-placement="right" data-container="#js-toolbar" title="" style="touch-action: manipulation; -moz-user-select: text;" data-ember-action="" data-ember-action-143="143" data-original-title="Zoom Out">
+    <span class="glyphicon glyphicon-zoom-out" style="-moz-user-select: text;"></span>
+  </button>
+</p>
+</div>
+
+<!---->
+<!---->
+<!----></div>
+
+
+  <style style="-moz-user-select: text;">
+    .dh-page-text::-moz-selection { background: rgba(178, 215, 255, 0.7); }
+  </style>
+
+<!---->
+<!---->
+
+  <input id="ember144" style="touch-action: manipulation; -moz-user-select: text;" class="ember-text-field dh-hidden-tab-receiver ember-view" type="text">
+
+  <div class="dh-document-pages-layout" style="min-width: 938px; width: 938px; max-width: 938px; min-height: 1258px; left: -5px; -moz-user-select: text;">
+  <div class="dh-document-pages-layout-wrapper" style="margin: 10px; -moz-user-select: text;">
+        <div id="ember146" style="touch-action: manipulation; width: 1038px; height: 1188px; top: 0px; -moz-user-select: text;" data-model-id="1132494202" class="dh-page crosshair ember-view">  <div class="dh-page-padding" style="-moz-user-select: text;">
+      <div id="ember147" style="height: 1188px; width: 918px; -moz-user-select: text;" class="dh-pdf-js-image ember-view"><div class="loading-screen" style="-moz-user-select: text;">
+</div>
+
+<canvas class="pdf-js-img-canvas" height="2458" width="1899" style="position: relative; left: 0px; top: 0px; height: 1188px; width: 918px; -moz-user-select: text;"></canvas></div>
+
+<!---->
+      <div id="ember149" style="left: 459px; bottom: 165.3px; pointer-events: none; -moz-user-select: text;" class="dh-paste-box-view ember-view"></div>
+
+        <div id="ember561" style="left: 337px; bottom: 239.6px; width: 27px; height: 24px; pointer-events: none;" class="dh-creation-box-view ember-view"><!---->
+<!---->
+<!----></div>
+
+        <div id="ember150" class="dh-page-objects-wrap ember-view" style="-moz-user-select: text;">    <div id="ember156" style="bottom: 373.2px; left: 82.4px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view"> Applicant Information
+</div>
+    <div id="ember158" style="bottom: 76.2px; left: 370.2px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">PROTECTED WHEN COMPLETED
+</div>
+    <div id="ember160" style="bottom: 78.4px; left: 81.3px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Form 100, Appendix D (2007)
+</div>
+    <div id="ember162" style="bottom: 78.4px; left: 671px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">   Version française disponible
+</div>
+    <div id="ember164" style="bottom: 1075.2px; left: 377.4px; font-size: 15px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view"> 
+</div>
+    <div id="ember166" style="bottom: 1057.9px; left: 261.3px; font-size: 15px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Consent to Provide Limited Personal Information About
+</div>
+    <div id="ember168" style="bottom: 1040.6px; left: 303.5px; font-size: 15px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Highly Qualified Personnel (HQP) to NSERC
+</div>
+    <div id="ember170" style="bottom: 95.7px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Note: This form must be retained by the applicant and made available to NSERC upon request.
+</div>
+    <div id="ember172" style="bottom: 909.5px; left: 209.4px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view"> Privacy Act 
+</div>
+    <div id="ember174" style="bottom: 909.3px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Based on the federal
+</div>
+    <div id="ember176" style="bottom: 752.7px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">known.
+</div>
+    <div id="ember178" style="bottom: 1004.6px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">NSERC applicants are required to describe their contributions to the training or supervision of highly qualified personnel
+</div>
+    <div id="ember180" style="bottom: 909.3px; left: 285.8px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">rules governing the collection of personal information, applicants are asked to obtain
+</div>
+    <div id="ember182" style="bottom: 893.7px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">consent from the individuals they have supervised before providing personal data about them to NSERC.  In seeking this
+</div>
+    <div id="ember184" style="bottom: 878.6px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">consent, the NSERC applicant must inform these individuals what data will be supplied, and assure them that it will only
+</div>
+    <div id="ember186" style="bottom: 862.2px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">be used by NSERC for the purpose of assessing the applicant’s contribution to HQP training. To reduce seeking consent
+</div>
+    <div id="ember188" style="bottom: 847.1px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">for multiple applications, applicants will only need to seek consent one time for a six-year period.  If the trainee provides
+</div>
+    <div id="ember190" style="bottom: 831.3px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">consent by e-mail, the response must include confirmation that they have read and agree to the text of the consent form.
+</div>
+    <div id="ember192" style="bottom: 720.5px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">An example of entering HQP information on Form 100 (with and without consent):
+</div>
+    <div id="ember194" style="bottom: 768.3px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">co-supervised, a general description of the project or thesis, and a general indication of the individual’s present position if
+</div>
+    <div id="ember196" style="bottom: 784.2px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">identify those supervised.  However, they may still provide the type of HQP training and status, years supervised or
+</div>
+    <div id="ember198" style="bottom: 799.8px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">When consent cannot be obtained, applicants are asked to not provide names, or other combinations of data, that would
+</div>
+    <div id="ember200" style="bottom: 545.4px; left: 84.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">(name
+</div>
+    <div id="ember202" style="bottom: 526.8px; left: 84.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">withheld)
+</div>
+    <div id="ember204" style="bottom: 545.4px; left: 186.9px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Undergraduate
+</div>
+    <div id="ember206" style="bottom: 526.8px; left: 186.9px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">(Completed)
+</div>
+    <div id="ember208" style="bottom: 545.4px; left: 306.2px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Supervised
+</div>
+    <div id="ember210" style="bottom: 526.8px; left: 306.2px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">1994 - 1997
+</div>
+    <div id="ember212" style="bottom: 607.7px; left: 84.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Roy, Marie
+</div>
+    <div id="ember214" style="bottom: 608.4px; left: 186.9px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Undergraduate
+</div>
+    <div id="ember216" style="bottom: 589.7px; left: 186.9px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">(Completed)
+</div>
+    <div id="ember218" style="bottom: 608.4px; left: 306.2px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Supervised
+</div>
+    <div id="ember220" style="bottom: 589.7px; left: 306.2px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">1994 - 1997
+</div>
+    <div id="ember222" style="bottom: 608.4px; left: 408.3px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Isotope geochemistry in 
+</div>
+    <div id="ember224" style="bottom: 589.7px; left: 408.3px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">petroleum engineering
+</div>
+    <div id="ember226" style="bottom: 685.3px; left: 85.8px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Name
+</div>
+    <div id="ember228" style="bottom: 685.3px; left: 187.8px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Type of HQP 
+</div>
+    <div id="ember230" style="bottom: 672px; left: 188px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Training and Status
+</div>
+    <div id="ember232" style="bottom: 685.3px; left: 307.2px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Years
+</div>
+    <div id="ember234" style="bottom: 672px; left: 307.2px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Supervised or 
+</div>
+    <div id="ember236" style="bottom: 658.5px; left: 307.2px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Co-supervised
+</div>
+    <div id="ember238" style="bottom: 684.3px; left: 619.7px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Present Position
+</div>
+    <div id="ember240" style="bottom: 684.3px; left: 409.5px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Title of Project or Thesis
+</div>
+    <div id="ember242" style="bottom: 545.4px; left: 408.3px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Isotope geochemistry
+</div>
+    <div id="ember244" style="bottom: 608.4px; left: 618.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">V-P (Research), Earth Analytics
+</div>
+    <div id="ember246" style="bottom: 589.7px; left: 618.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Inc., Calgary, Alberta
+</div>
+    <div id="ember248" style="bottom: 545.4px; left: 618.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">research executive in  petroleum
+</div>
+    <div id="ember250" style="bottom: 526.8px; left: 618.6px; font-size: 17px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">industry - western Canada
+</div>
+    <div id="ember252" style="bottom: 137.3px; left: 118.4px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Trainee's signature
+</div>
+    <div id="ember254" style="bottom: 137.3px; left: 468px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Date
+</div>
+    <div id="ember256" style="bottom: 261.2px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">consideration to NSERC for the next six years.  This limited data will only include my name, type of HQP training and
+</div>
+    <div id="ember258" style="bottom: 214.1px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">this data in accordance with the                    , and that it will only be used in processes that assess the applicant's
+</div>
+    <div id="ember260" style="bottom: 277px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">I hereby allow the above-named applicant to include limited personal data about me in grant applications submitted for
+</div>
+    <div id="ember262" style="bottom: 245.6px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">status, years supervised or co-supervised, title of the project or thesis and, to the best of the applicant's knowledge, my
+</div>
+    <div id="ember264" style="bottom: 229.7px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">position title and company or organization at the time the application is submitted.  I understand that NSERC will protect
+</div>
+    <div id="ember266" style="bottom: 198.1px; left: 87.9px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">contributions to the training of highly qualified personnel (HQP), including confidential peer review.
+</div>
+    <div id="ember268" style="bottom: 432.2px; left: 82.4px; font-size: 18px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Consent Form
+</div>
+    <div id="ember270" style="bottom: 411.2px; left: 87.9px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Name of Trainee
+</div>
+    <div id="ember272" style="bottom: 316.7px; left: 435.3px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Postsecondary Institution
+</div>
+    <div id="ember274" style="bottom: 354px; left: 87.9px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Name
+</div>
+    <div id="ember276" style="bottom: 316.7px; left: 87.9px; font-size: 12px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">Department
+</div>
+    <div id="ember278" style="bottom: 631.7px; left: 82.4px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view"> Consent Received from Marie Roy
+</div>
+    <div id="ember280" style="bottom: 568.7px; left: 82.4px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view"> Consent Not Obtained from Marie Roy
+</div>
+    <div id="ember282" style="bottom: 988.7px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">(HQP) by providing certain details about the individuals they have trained or supervised during the six years prior to their
+</div>
+    <div id="ember284" style="bottom: 973.1px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">current application.  HQP information must be entered on the Personal Data Form (Form 100).  This information includes
+</div>
+    <div id="ember286" style="bottom: 957.2px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">the trainee’s name, type of HQP training (e.g., undergraduate, master’s, technical etc.) and status (completed, in-progress,
+</div>
+    <div id="ember288" style="bottom: 941.6px; left: 81.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view">incomplete), years supervised or co-supervised, title of the project or thesis, and the individual’s present position.
+</div>
+    <div id="ember290" style="bottom: 213.5px; left: 281.3px; font-size: 13px; font-family: Arial; -moz-user-select: text;" class="dh-page-object text ember-view"> Privacy Act
+</div>
+<!----></div>
+
+<!---->
+<!---->
+<!---->
+            <div id="ember346" style="touch-action: manipulation; left: 105px; top: 775.5px; width: 274.95px; height: 19.8px; -moz-user-select: text;" data-movable-id="an-1146417040" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember347" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember348" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;">Kai Blumberg</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember369" style="touch-action: manipulation; left: 127.95px; top: 828.9px; width: 209.1px; height: 19.8px; -moz-user-select: text;" data-movable-id="an-1146417162" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember370" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember371" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;">Dr. Sean Crowe</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember389" style="touch-action: manipulation; left: 157.95px; top: 868.05px; width: 256px; height: 19.8px; -moz-user-select: text;" data-movable-id="an-1146417267" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember390" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember391" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;">Microbiology and immunology</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember414" style="touch-action: manipulation; left: 442.95px; top: 868.05px; width: 290.1px; height: 19.8px; -moz-user-select: text;" data-movable-id="an-1146417456" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember415" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember416" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;">University of British Columbia</div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember452" style="touch-action: manipulation; left: 124.05px; top: 991.95px; width: 45px; height: 49.05px; -moz-user-select: text;" data-movable-id="an-1146417636" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember453" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+<!---->
+<!---->
+<!---->
+  <svg id="ember454" height="100%" xmlns="http://www.w3.org/2000/svg" class="ember-view" style="-moz-user-select: text;" viewBox="0 0 45 49">    <path d="M14,8L14,8.33C14,8.67,14,9.33,13.5,10.83C13,12.33,12,14.67,11.5,16.17C11,17.67,11,18.33,10.67,19.33C10.33,20.33,9.67,21.67,9.17,22.67C8.67,23.67,8.33,24.33,8.17,24.83C8,25.33,8,25.67,7.83,26C7.67,26.33,7.33,26.67,7.17,27C7,27.33,7,27.67,6.83,28C6.67,28.33,6.33,28.67,6.17,29C6,29.33,6,29.67,6,29.83L6,30" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+    <path d="M11,22L11.33,21.83C11.67,21.67,12.33,21.33,13.33,20.67C14.33,20,15.67,19,16.67,18.33C17.67,17.67,18.33,17.33,19.17,16.83C20,16.33,21,15.67,22,15C23,14.33,24,13.67,24.5,13.33C25,13,25,13,25,13L25,13" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+    <path d="M11,22L11,22C11,22,11,22,11.17,22.17C11.33,22.33,11.67,22.67,12,23C12.33,23.33,12.67,23.67,13,24C13.33,24.33,13.67,24.67,14,25C14.33,25.33,14.67,25.67,15,26C15.33,26.33,15.67,26.67,15.83,26.83C16,27,16,27,16.17,27.17C16.33,27.33,16.67,27.67,17,27.83C17.33,28,17.67,28,17.83,28C18,28,18,28,18.17,28.17C18.33,28.33,18.67,28.67,18.83,28.83C19,29,19,29,19,29L19,29" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+    <path d="M26,26L25.5,26.17C25,26.33,24,26.67,23.33,27C22.67,27.33,22.33,27.67,22.17,27.83C22,28,22,28,21.83,28C21.67,28,21.33,28,21.17,28C21,28,21,28,21,28.17C21,28.33,21,28.67,21,29C21,29.33,21,29.67,21,30C21,30.33,21,30.67,21.17,30.83C21.33,31,21.67,31,21.83,31C22,31,22,31,22,31.17C22,31.33,22,31.67,22,32C22,32.33,22,32.67,22.17,32.83C22.33,33,22.67,33,23,33C23.33,33,23.67,33,24,33C24.33,33,24.67,33,25.17,33C25.67,33,26.33,33,27.17,32.83C28,32.67,29,32.33,29.67,32C30.33,31.67,30.67,31.33,31,31C31.33,30.67,31.67,30.33,31.83,30.17C32,30,32,30,32,29.83C32,29.67,32,29.33,32.17,29.17C32.33,29,32.67,29,32.83,28.83C33,28.67,33,28.33,33.33,27.83C33.67,27.33,34.33,26.67,34.67,26.33C35,26,35,26,35,26L35,26" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+    <path d="M35,26L35,26.67C35,27.33,35,28.67,34.5,30C34,31.33,33,32.67,32.33,34C31.67,35.33,31.33,36.67,31.17,37.83C31,39,31,40,30.83,40.83C30.67,41.67,30.33,42.33,30.17,42.67C30,43,30,43,30.17,43C30.33,43,30.67,43,31,42.67C31.33,42.33,31.67,41.67,32,41C32.33,40.33,32.67,39.67,32.83,39.17C33,38.67,33,38.33,33.17,38.17C33.33,38,33.67,38,33.83,37.83C34,37.67,34,37.33,34.17,37.17C34.33,37,34.67,37,35,37C35.33,37,35.67,37,35.83,36.83C36,36.67,36,36.33,36.5,35.83C37,35.33,38,34.67,38.5,34.17C39,33.67,39,33.33,39,33.17C39,33,39,33,39,33C39,33,39,33,39,32.33C39,31.67,39,30.33,39,29.67L39,29" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+    <path d="M36,6L36.17,6.33C36.33,6.67,36.67,7.33,36.83,7.83C37,8.33,37,8.67,37,8.83L37,9" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+</svg>
+
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----></div>
+<!---->            <div id="ember476" style="touch-action: manipulation; left: 166.05px; top: 1002px; width: 25.95px; height: 34.05px; -moz-user-select: text;" data-movable-id="an-1146417687" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember477" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+<!---->
+<!---->
+<!---->
+  <svg id="ember478" height="100%" xmlns="http://www.w3.org/2000/svg" class="ember-view" style="-moz-user-select: text;" viewBox="0 0 26 34">    <path d="M6,28L6.5,27.33C7,26.67,8,25.33,8.83,24.33C9.67,23.33,10.33,22.67,11,21.83C11.67,21,12.33,20,12.83,19C13.33,18,13.67,17,14,16.33C14.33,15.67,14.67,15.33,14.83,14.83C15,14.33,15,13.67,15,13.17C15,12.67,15,12.33,15.17,12.17C15.33,12,15.67,12,15.83,11.83C16,11.67,16,11.33,16,11.17C16,11,16,11,16.33,10.5C16.67,10,17.33,9,17.83,8.33C18.33,7.67,18.67,7.33,18.83,7.17C19,7,19,7,19,6.83C19,6.67,19,6.33,19.17,6.17C19.33,6,19.67,6,19.83,6L20,6" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+</svg>
+
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----></div>
+            <div id="ember483" style="touch-action: manipulation; left: 174px; top: 990px; width: 39px; height: 42px; -moz-user-select: text;" data-movable-id="an-1146417717" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember484" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+<!---->
+<!---->
+<!---->
+  <svg id="ember485" height="100%" xmlns="http://www.w3.org/2000/svg" class="ember-view" style="-moz-user-select: text;" viewBox="0 0 39 42">    <path d="M6,36L6.17,35.33C6.33,34.67,6.67,33.33,7,32C7.33,30.67,7.67,29.33,7.83,28.5C8,27.67,8,27.33,8.33,26.33C8.67,25.33,9.33,23.67,9.83,22.5C10.33,21.33,10.67,20.67,11,20C11.33,19.33,11.67,18.67,12.17,18C12.67,17.33,13.33,16.67,13.83,16.17C14.33,15.67,14.67,15.33,15,14.83C15.33,14.33,15.67,13.67,16.17,13.17C16.67,12.67,17.33,12.33,18,12C18.67,11.67,19.33,11.33,20,10.83C20.67,10.33,21.33,9.67,22.17,9.17C23,8.67,24,8.33,24.83,8C25.67,7.67,26.33,7.33,26.83,7C27.33,6.67,27.67,6.33,28.17,6.17C28.67,6,29.33,6,29.83,6C30.33,6,30.67,6,31,6C31.33,6,31.67,6,31.83,6C32,6,32,6,32.17,6C32.33,6,32.67,6,32.83,6C33,6,33,6,32.67,6.33C32.33,6.67,31.67,7.33,31.17,7.83C30.67,8.33,30.33,8.67,29.83,9C29.33,9.33,28.67,9.67,28.33,9.83C28,10,28,10,27.83,10C27.67,10,27.33,10,27.17,10.17C27,10.33,27,10.67,26.83,10.83C26.67,11,26.33,11,26.17,11C26,11,26,11,25.83,11C25.67,11,25.33,11,25.17,11.17C25,11.33,25,11.67,24.83,11.83C24.67,12,24.33,12,24.17,12L24,12" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+</svg>
+
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----></div>
+            <div id="ember490" style="touch-action: manipulation; left: 175.05px; top: 991.95px; width: 201px; height: 64.05px; -moz-user-select: text;" data-movable-id="an-1146417848" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember491" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+<!---->
+<!---->
+<!---->
+  <svg id="ember492" height="100%" xmlns="http://www.w3.org/2000/svg" class="ember-view" style="-moz-user-select: text;" viewBox="0 0 201 64">    <path d="M25,12L24.83,12.17C24.67,12.33,24.33,12.67,23.5,13.33C22.67,14,21.33,15,20.67,15.5C20,16,20,16,19.67,16.17C19.33,16.33,18.67,16.67,18.33,17C18,17.33,18,17.67,17.83,17.83C17.67,18,17.33,18,17,18C16.67,18,16.33,18,16.17,18C16,18,16,18,15.83,18.17C15.67,18.33,15.33,18.67,15,19C14.67,19.33,14.33,19.67,14.17,19.83C14,20,14,20,13.83,20C13.67,20,13.33,20,13.17,20C13,20,13,20,12.83,20.17C12.67,20.33,12.33,20.67,12,21C11.67,21.33,11.33,21.67,11.17,21.83C11,22,11,22,11,22C11,22,11,22,11.17,22.17C11.33,22.33,11.67,22.67,12,22.83C12.33,23,12.67,23,13,23C13.33,23,13.67,23,14,23C14.33,23,14.67,23,15,22.83C15.33,22.67,15.67,22.33,16,22.17C16.33,22,16.67,22,17.17,21.83C17.67,21.67,18.33,21.33,19,21.17C19.67,21,20.33,21,21,21C21.67,21,22.33,21,22.67,21C23,21,23,21,22.83,21.17C22.67,21.33,22.33,21.67,21.5,22.33C20.67,23,19.33,24,18.5,24.83C17.67,25.67,17.33,26.33,17,26.83C16.67,27.33,16.33,27.67,16,28C15.67,28.33,15.33,28.67,15,28.83C14.67,29,14.33,29,13.83,29.17C13.33,29.33,12.67,29.67,12,30.17C11.33,30.67,10.67,31.33,10,31.83C9.33,32.33,8.67,32.67,8.17,33C7.67,33.33,7.33,33.67,7.17,34C7,34.33,7,34.67,7,35C7,35.33,7,35.67,6.83,35.83C6.67,36,6.33,36,6.17,36C6,36,6,36,6,36.17C6,36.33,6,36.67,6,37C6,37.33,6,37.67,6,37.83C6,38,6,38,6,38.17C6,38.33,6,38.67,6,39C6,39.33,6,39.67,6.17,39.83C6.33,40,6.67,40,7.17,40C7.67,40,8.33,40,9.5,39.5C10.67,39,12.33,38,14.17,36.83C16,35.67,18,34.33,19.5,33.33C21,32.33,22,31.67,23,30.83C24,30,25,29,26.17,28.17C27.33,27.33,28.67,26.67,30.17,25.67C31.67,24.67,33.33,23.33,34.67,22.33C36,21.33,37,20.67,37.83,20C38.67,19.33,39.33,18.67,40,18C40.67,17.33,41.33,16.67,42,16.17C42.67,15.67,43.33,15.33,44,14.83C44.67,14.33,45.33,13.67,46.33,13C47.33,12.33,48.67,11.67,49.67,10.83C50.67,10,51.33,9,51.83,8.33C52.33,7.67,52.67,7.33,52.83,7.17C53,7,53,7,53.17,6.83C53.33,6.67,53.67,6.33,53.67,6.17C53.67,6,53.33,6,52.33,6.83C51.33,7.67,49.67,9.33,47.83,10.67C46,12,44,13,42.33,14.17C40.67,15.33,39.33,16.67,38.5,17.5C37.67,18.33,37.33,18.67,36.83,19.33C36.33,20,35.67,21,35,21.67C34.33,22.33,33.67,22.67,33.17,23.17C32.67,23.67,32.33,24.33,32,24.83C31.67,25.33,31.33,25.67,31.17,26C31,26.33,31,26.67,30.83,26.83C30.67,27,30.33,27,30.17,27.17C30,27.33,30,27.67,29.83,28C29.67,28.33,29.33,28.67,29,29.33C28.67,30,28.33,31,28,31.67C27.67,32.33,27.33,32.67,27.17,33C27,33.33,27,33.67,27,33.83C27,34,27,34,27,34.17C27,34.33,27,34.67,27,35C27,35.33,27,35.67,27,35.83C27,36,27,36,27,36.17C27,36.33,27,36.67,27.17,36.83C27.33,37,27.67,37,28,37C28.33,37,28.67,37,29,37C29.33,37,29.67,37,30,37C30.33,37,30.67,37,31,37C31.33,37,31.67,37,32.17,36.67C32.67,36.33,33.33,35.67,34,35.17C34.67,34.67,35.33,34.33,35.83,34.17C36.33,34,36.67,34,37,33.83C37.33,33.67,37.67,33.33,38,33.17C38.33,33,38.67,33,39,32.83C39.33,32.67,39.67,32.33,39.83,32.17C40,32,40,32,40,32C40,32,40,32,40,32.33C40,32.67,40,33.33,40,34.33C40,35.33,40,36.67,39.83,37.67C39.67,38.67,39.33,39.33,39.33,39.67C39.33,40,39.67,40,40,40C40.33,40,40.67,40,41.83,39.5C43,39,45,38,46.33,37.33C47.67,36.67,48.33,36.33,49,36C49.67,35.67,50.33,35.33,50.67,35.17C51,35,51,35,51.33,34.5C51.67,34,52.33,33,52.83,32.33C53.33,31.67,53.67,31.33,54,31.17C54.33,31,54.67,31,54.83,31.17C55,31.33,55,31.67,54.67,32.17C54.33,32.67,53.67,33.33,53.33,33.83C53,34.33,53,34.67,53,35C53,35.33,53,35.67,53,36C53,36.33,53,36.67,52.83,37.17C52.67,37.67,52.33,38.33,52.17,38.67C52,39,52,39,52,39.17C52,39.33,52,39.67,52,39.83C52,40,52,40,52.17,40C52.33,40,52.67,40,53.5,39.83C54.33,39.67,55.67,39.33,56.67,39C57.67,38.67,58.33,38.33,58.67,38.17C59,38,59,38,59.17,38C59.33,38,59.67,38,59.83,37.83C60,37.67,60,37.33,60.17,37.17C60.33,37,60.67,37,60.83,36.83C61,36.67,61,36.33,61.17,36.17C61.33,36,61.67,36,61.83,36C62,36,62,36,62,35.83C62,35.67,62,35.33,62.17,35.17C62.33,35,62.67,35,63.17,34.67C63.67,34.33,64.33,33.67,64.67,33.33C65,33,65,33,65.17,32.67C65.33,32.33,65.67,31.67,66,31.17C66.33,30.67,66.67,30.33,67,30C67.33,29.67,67.67,29.33,67.83,29C68,28.67,68,28.33,68,28.17C68,28,68,28,68.17,28.83C68.33,29.67,68.67,31.33,68.83,32.67C69,34,69,35,69,35.67C69,36.33,69,36.67,69,36.83C69,37,69,37,69,37.17C69,37.33,69,37.67,69,37.83C69,38,69,38,69,38.17C69,38.33,69,38.67,69.17,38.33C69.33,38,69.67,37,70,35.33C70.33,33.67,70.67,31.33,71,30C71.33,28.67,71.67,28.33,71.83,28.17C72,28,72,28,72,28C72,28,72,28,72.17,28C72.33,28,72.67,28,72.83,28.33C73,28.67,73,29.33,73.33,30.33C73.67,31.33,74.33,32.67,74.67,34C75,35.33,75,36.67,75,37.5C75,38.33,75,38.67,75,38.83C75,39,75,39,75.17,38.67C75.33,38.33,75.67,37.67,76.17,36.67C76.67,35.67,77.33,34.33,77.67,33.5C78,32.67,78,32.33,78.17,32C78.33,31.67,78.67,31.33,78.83,31C79,30.67,79,30.33,79.17,30C79.33,29.67,79.67,29.33,80,29.17C80.33,29,80.67,29,80.83,29C81,29,81,29,81,29.17C81,29.33,81,29.67,81.33,30.83C81.67,32,82.33,34,82.67,35.33C83,36.67,83,37.33,83,37.83C83,38.33,83,38.67,83,39C83,39.33,83,39.67,83,40C83,40.33,83,40.67,83,40.83C83,41,83,41,83,41.17C83,41.33,83,41.67,83.33,41.83C83.67,42,84.33,42,85,42C85.67,42,86.33,42,87,42C87.67,42,88.33,42,89.83,41.33C91.33,40.67,93.67,39.33,95.33,37.67C97,36,98,34,98.5,32.5C99,31,99,30,99.17,29.33C99.33,28.67,99.67,28.33,99.83,28C100,27.67,100,27.33,100,27C100,26.67,100,26.33,100,26C100,25.67,100,25.33,100,25C100,24.67,100,24.33,100,23.83C100,23.33,100,22.67,100,22C100,21.33,100,20.67,100,20.17C100,19.67,100,19.33,100,19C100,18.67,100,18.33,100,18C100,17.67,100,17.33,100,17C100,16.67,100,16.33,100,16.17C100,16,100,16,100,15.83C100,15.67,100,15.33,100.17,14.83C100.33,14.33,100.67,13.67,100.83,13.33C101,13,101,13,101.17,13.33C101.33,13.67,101.67,14.33,101.83,15.17C102,16,102,17,102,17.83C102,18.67,102,19.33,102,20C102,20.67,102,21.33,102,22.17C102,23,102,24,101.67,24.83C101.33,25.67,100.67,26.33,100.33,26.83C100,27.33,100,27.67,99.67,28.67C99.33,29.67,98.67,31.33,98.33,32.33C98,33.33,98,33.67,97.83,34C97.67,34.33,97.33,34.67,97.17,35C97,35.33,97,35.67,97.17,36.17C97.33,36.67,97.67,37.33,98,38C98.33,38.67,98.67,39.33,99.17,40C99.67,40.67,100.33,41.33,100.83,41.83C101.33,42.33,101.67,42.67,102,42.83C102.33,43,102.67,43,104,42.83C105.33,42.67,107.67,42.33,109.17,41.83C110.67,41.33,111.33,40.67,112,40.17C112.67,39.67,113.33,39.33,113.83,39C114.33,38.67,114.67,38.33,115,38C115.33,37.67,115.67,37.33,115.83,37.17C116,37,116,37,116,37C116,37,116,37,116.17,37C116.33,37,116.67,37,116.67,37C116.67,37,116.33,37,116,36.83C115.67,36.67,115.33,36.33,115.17,36.17C115,36,115,36,115,36C115,36,115,36,114.83,36C114.67,36,114.33,36,114,36C113.67,36,113.33,36,113.17,35.83C113,35.67,113,35.33,112.83,35.17C112.67,35,112.33,35,112,35C111.67,35,111.33,35,111,34.83C110.67,34.67,110.33,34.33,110.17,34.17C110,34,110,34,109.83,34C109.67,34,109.33,34,110.33,34.33C111.33,34.67,113.67,35.33,115.17,35.67C116.67,36,117.33,36,118.17,36.17C119,36.33,120,36.67,120.67,36.83C121.33,37,121.67,37,122.17,37C122.67,37,123.33,37,124,37C124.67,37,125.33,37,125.83,37C126.33,37,126.67,37,127,37C127.33,37,127.67,37,128,37C128.33,37,128.67,37,129.17,37C129.67,37,130.33,37,131,37C131.67,37,132.33,37,132.83,37C133.33,37,133.67,37,134,37C134.33,37,134.67,37,135,37C135.33,37,135.67,37,135.83,37C136,37,136,37,136.33,37C136.67,37,137.33,37,137.83,36.83C138.33,36.67,138.67,36.33,139,36C139.33,35.67,139.67,35.33,139.83,35C140,34.67,140,34.33,140.17,34C140.33,33.67,140.67,33.33,140.83,33.17C141,33,141,33,141,32.83C141,32.67,141,32.33,141,32C141,31.67,141,31.33,140.83,31.17C140.67,31,140.33,31,140,30.83C139.67,30.67,139.33,30.33,139,30C138.67,29.67,138.33,29.33,138.17,29C138,28.67,138,28.33,137.83,28.17C137.67,28,137.33,28,136.83,28C136.33,28,135.67,28,135.17,28.17C134.67,28.33,134.33,28.67,133.83,29.33C133.33,30,132.67,31,132.33,32.17C132,33.33,132,34.67,132,36C132,37.33,132,38.67,132.17,39.83C132.33,41,132.67,42,133,42.83C133.33,43.67,133.67,44.33,134,44.83C134.33,45.33,134.67,45.67,136,45.5C137.33,45.33,139.67,44.67,141.33,43.5C143,42.33,144,40.67,145.17,38.83C146.33,37,147.67,35,148.5,33C149.33,31,149.67,29,150,27.5C150.33,26,150.67,25,150.83,24.33C151,23.67,151,23.33,151,23.17C151,23,151,23,151,23.17C151,23.33,151,23.67,151.33,24.33C151.67,25,152.33,26,153,27C153.67,28,154.33,29,155,29.67C155.67,30.33,156.33,30.67,157,31C157.67,31.33,158.33,31.67,159.17,31.83C160,32,161,32,162,32C163,32,164,32,165,32C166,32,167,32,167.83,32C168.67,32,169.33,32,170.17,32C171,32,172,32,172.67,32C173.33,32,173.67,32,173.83,32C174,32,174,32,174.17,32.17C174.33,32.33,174.67,32.67,174.83,32.67C175,32.67,175,32.33,174.83,32.17C174.67,32,174.33,32,174,32C173.67,32,173.33,32,173.17,32C173,32,173,32,172.83,32C172.67,32,172.33,32,172.17,32.17C172,32.33,172,32.67,171.83,33C171.67,33.33,171.33,33.67,171.17,34C171,34.33,171,34.67,171,34.83C171,35,171,35,171,35.17C171,35.33,171,35.67,171,35.83C171,36,171,36,171.17,36.5C171.33,37,171.67,38,172,38.83C172.33,39.67,172.67,40.33,172.83,41C173,41.67,173,42.33,173.33,43C173.67,43.67,174.33,44.33,174.67,44.67C175,45,175,45,175,45.17C175,45.33,175,45.67,175.17,45.83C175.33,46,175.67,46,175.83,46.17C176,46.33,176,46.67,176,47C176,47.33,176,47.67,175.83,48.33C175.67,49,175.33,50,174.67,51.33C174,52.67,173,54.33,172,55.33C171,56.33,170,56.67,169.17,57C168.33,57.33,167.67,57.67,166.33,57.83C165,58,163,58,161.17,57.67C159.33,57.33,157.67,56.67,156.33,56C155,55.33,154,54.67,153.33,54.33C152.67,54,152.33,54,151.83,53.83C151.33,53.67,150.67,53.33,150.33,53.17C150,53,150,53,149.83,53C149.67,53,149.33,53,149.67,52.83C150,52.67,151,52.33,153,51.5C155,50.67,158,49.33,161.5,47.83C165,46.33,169,44.67,172.33,43.17C175.67,41.67,178.33,40.33,180.5,39.33C182.67,38.33,184.33,37.67,185.5,37.17C186.67,36.67,187.33,36.33,188.17,36C189,35.67,190,35.33,190.67,35C191.33,34.67,191.67,34.33,192.17,34C192.67,33.67,193.33,33.33,193.83,33C194.33,32.67,194.67,32.33,194.83,32.17C195,32,195,32,195,32L195,32" fill="transparent" stroke="#000000" stroke-width="3" stroke-opacity="1" stroke-linecap="round" stroke-linejoin="round" style="-moz-user-select: text;"></path>
+</svg>
+
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----></div>
+            <div id="ember548" style="touch-action: manipulation; -ms-touch-action: manipulation;left: 472.04999999999995px; top: 1008.5999999999999px; width: 177px; height: 19.8px;" data-movable-id="an-1146417997" tabindex="-1" class="dh-movable panel dh-movable-panel-hover dh-panel-primary dh-movable-panel dh-movable-border-active ember-view">    <div id="ember551" style="touch-action: manipulation; -moz-user-select: text;" class="panel-heading dh-movable-panel-head ember-view">  <button class="pull-right no-focus-ring destroy-movable" aria-hidden="true" tabindex="-1" style="touch-action: manipulation; -moz-user-select: text;" type="button" data-ember-action="" data-ember-action-552="552">
+  </button>
+</div>
+
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember549" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember550" class="dh-annot-freetext active ember-view" style="-moz-user-select: text;"><textarea id="ember553" style="touch-action: manipulation; font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; height: 21.6px; overflow: hidden; -moz-user-select: text;" tabindex="-1" class="ember-text-area form-control mousetrap textarea ember-auto-resize ember-view">Aug 23 2018</textarea></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember356" style="touch-action: manipulation; left: 417px; top: 736.35px; width: 27px; height: 24px; -moz-user-select: text;" data-movable-id="an-null" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember357" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember358" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;"></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember381" style="touch-action: manipulation; left: 417px; top: 775.8px; width: 27px; height: 24px; -moz-user-select: text;" data-movable-id="an-null" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember382" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember383" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;"></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember406" style="touch-action: manipulation; left: 484.05px; top: 868.35px; width: 27px; height: 24px; -moz-user-select: text;" data-movable-id="an-null" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember407" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember408" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;"></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember423" style="touch-action: manipulation; left: 667.05px; top: 829.2px; width: 27px; height: 24px; -moz-user-select: text;" data-movable-id="an-null" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember424" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember425" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;"></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+            <div id="ember435" style="touch-action: manipulation; left: 517.95px; top: 829.2px; width: 27px; height: 24px; -moz-user-select: text;" data-movable-id="an-null" tabindex="-1" class="dh-movable panel dh-movable-panel resize-disabled ember-view"><!---->
+  <div class="content-area" style="-moz-user-select: text;">
+      <div id="ember436" class="dh-annot ember-view" style="-moz-user-select: text;">
+<!---->
+  <div id="ember437" class="dh-annot-freetext not-active ember-view" style="-moz-user-select: text;"><div class="textarea" style="font-size: 18px; padding-bottom: 3.6px; text-align: left; color: rgb(0, 0, 0); line-height: 1em; font-family: Helvetica, Arial, sans-serif; min-height: 18px; -moz-user-select: text;"></div></div>
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!----></div>
+  </div>
+<!----><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90; display: block; -moz-user-select: text;"></div></div>
+
+<!---->
+<!---->  </div>
+
+    <div id="ember151" style="left: 978px; -moz-user-select: text;" class="dh-comment-panel ember-view"><!----></div>
+</div>
+  </div>
+  </div>
+  <input id="ember152" style="touch-action: manipulation; -moz-user-select: text;" class="ember-text-field dh-hidden-tab-receiver ember-view" type="text">
+
+
+<!---->
+
+<textarea id="ember153" style="touch-action: manipulation; -moz-user-select: text;" class="dh-hidden-input ember-view"> </textarea>
+</div>
+  <!---->
+  <!---->
+</div>
+
+<div id="ember154" class="label label-default dh-page-number-label ember-view" style="-moz-user-select: text;">Page 1 of 1</div>
+
+<!---->
+<!---->
+<!---->
+</div>
+
+<!---->  </div>
+  <div id="ember136" class="dh-pdf-js-progress visible ember-view" style="display: none; -moz-user-select: text;">
+  Loading 85.7 kB...
+</div>
+
+</div>
+
+
+<!---->
+<div id="ember5" class="dh-async-download fadeout ember-view" style="-moz-user-select: text;"><div class="panel panel-default" style="-moz-user-select: text;">
+  <div class="panel-body" style="-moz-user-select: text;">
+    <i class="fa fa-check-circle text-success" style="-moz-user-select: text;"></i>
+    Preparing Documents
+  </div>
+</div>
+</div>
+</div><div id="dom_ruler-text_measurer" style="position: absolute; left: -10010px; top: -10px; width: 10000px; height: 0px; overflow: hidden; visibility: hidden; -moz-user-select: text;"><div style="-moz-user-select: text;"></div></div><iframe id="apiproxy2c477604e4bf856dfda6d6f495de9cb56170c6090.2785820199" name="apiproxy2c477604e4bf856dfda6d6f495de9cb56170c6090.2785820199" style="width: 1px; height: 1px; position: absolute; top: -100px; display: none; -moz-user-select: text;" src="NSERC%20consent%20form%20|%20DocHub_files/proxy.html" tabindex="-1" aria-hidden="true"></iframe><iframe style="position: absolute; width: 1px; height: 1px; left: -9999px; display: none; -moz-user-select: text;" aria-hidden="true" id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" src="NSERC%20consent%20form%20|%20DocHub_files/iframe.html"></iframe></body></html>

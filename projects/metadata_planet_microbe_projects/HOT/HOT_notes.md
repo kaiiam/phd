@@ -4,10 +4,15 @@ Two decibar-averaged CTD profiles from the Hawaii Ocean Time-Series cruises from
 
 [BCO-DMO hot project CTD data](https://www.bco-dmo.org/dataset/3937)
 
-[nicely indexed version of CTD data](http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/HOT/ctd.brev0%7Bdir=dmoserv3.whoi.edu/jg/dir/BCO-DMO/HOT/,info=dmoserv3.bco-dmo.org/jg/info/BCO-DMO/HOT/ctd%7D) 
+[nicely indexed version of CTD data](http://dmoserv3.bco-dmo.org/jg/serv/BCO-DMO/HOT/ctd.brev0%7Bdir=dmoserv3.whoi.edu/jg/dir/BCO-DMO/HOT/,info=dmoserv3.bco-dmo.org/jg/info/BCO-DMO/HOT/ctd%7D)
 
 
-[other hot data BCO-DMO page](https://www.bco-dmo.org/project/2101) 
+[HOT parameters ](http://dmoserv3.bco-dmo.org/jg/info/BCO-DMO/HOT/ctd%7Bdir=dmoserv3.whoi.edu/jg/dir/BCO-DMO/HOT/,data=dmoserv3.bco-dmo.org:80/jg/serv/BCO-DMO/HOT/ctd.brev1%7D?parameters%20eq%201;2;3;4;5;6) **This is the metadata we need!**
+
+
+
+
+[other hot data BCO-DMO page](https://www.bco-dmo.org/project/2101)
 
 
 # niskin bottle samples
