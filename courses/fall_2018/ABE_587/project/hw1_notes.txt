@@ -1,0 +1,23 @@
+Homework 1.
+
+In class, you were assigned to a project group with a dataset from the human microbiome that you will use for completing your homework and final project. 
+
+Based on this dataset find a related article in google scholar. For example, the article the data were originally created for (you can often find a link by searching for the project record associated with an accession number for your dataset at NCBI)
+
+1. Read the Koskella et al. paper to get some ideas for the types of questions you can ask of a microbiome dataset, and in particular yours!
+
+2. Read the paper associated with your data.
+
+3. Answer the following questions:
+
+a. What was the overall purpose of the study?
+
+b. What data did they collect? (e.g. #samples, sampling site, disease state, sampling time, etc) 
+
+c. What sequencing technologies did they use? (amplicon, whole genome shotgun, or both?)
+
+d. What scientific questions did they address? (see Koskella et al. )
+
+e. What were the major findings of the study? 
+
+f. Does your data overlap with this study (check the methods for accession numbers)? What scientific questions might you ask given your dataset?
