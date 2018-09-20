@@ -1,0 +1,151 @@
+# OSD
+
+Ammonium
+Carbon, organic, dissolved //dissolved organic carbon
+Carbon, organic, particulate //particulate organic carbon
+Chlorophyll a //concentration of chlorophyll a in seawater
+Conductivity 
+Date/Time of event
+DEPTH, water
+Nitrate //concentration of nitrate in seawater
+Nitrite //concentration of nitrite in seawater
+Nitrogen, organic, dissolved //dissolved organic nitrogen
+Nitrogen, organic, particulate //particulate organic nitrogen
+Oxygen
+pH
+Phosphate //concentration of phosphate in seawater
+Radiation, photosynthetically active //PAR
+Salinity
+Sample ID //? could be pangaea, EBI NCBI each biosample or project ... many variations. 
+Silicate
+Temperature, water
+
+
+# TARA_Env_context
+
+Chlorophyll a //concentration of chlorophyll a in seawater
+Conductivity
+Date/Time of event
+Density, sigma-theta (0) //potential density in TARA_ENV_Con, HOT_Niskin and BATS_bottle
+Depth, bottom/max
+Depth, nominal
+Depth, top/min
+Fluorescence, colored dissolved organic matter //about DOM shows up 5 times pin this down
+Nitrate //concentration of nitrate in seawater
+Oxygen
+Radiation, photosynthetically active //PAR
+Salinity
+Sample ID? could be pangaea, EBI NCBI each biosample or project ... many variations. 
+Size fraction, lower threshold: //filter fraction shows up quite a bit in this field
+Size fraction, upper threshold: //filter fraction shows up quite a bit in this field
+Temperature, water
+
+
+# BATS_CTD
+
+Conductivity
+date
+decimal year
+Depth
+Dissolved Oxygen
+Fluorescence // I'm not clear fluorescence of what? shows up 5 times pin this down
+PAR
+Pressure
+Salinity
+Temperature
+
+# BATS_bottle
+
+Bact //Bacteria enumeration
+CO2 //DIC
+decy //Decimal Year
+Depth 
+NO21 //concentration of nitrite in seawater
+NO31 //NOX NO2+NO3
+O2(1) //oxygen
+PO41 //concentration of phosphate in seawater
+POC //particulate organic carbon
+PON //particulate organic Nitrogen
+POP //particulate organic Phosphorus
+Pro	//Prochlorococcus
+Sal1 //Salinity-1
+Si1 //Silicate-1
+Sig-th //potential density in TARA_ENV_Con, HOT_Niskin and BATS_bottle
+TDP //Total dissolved Phosphorus
+Temp
+time
+TN //Total nitrogen I presume
+TOC //Total organic carbon
+yyyymmdd 
+
+# HOT_CTD
+
+CTDOXY //Oxygen
+CTDPRS //Pressure
+CTDSAL //Salinity
+CTDTMP //Temperature
+Date //MMDDYY
+depth_max
+FLUOR //show us a bit I'm not clear fluorescence of what?
+ISO_DateTime
+NITRATE //concentration of nitrate in seawater
+pres_max
+timecode
+timeutc //time
+
+# HOT_Niskin
+
+CHL_A  //concentration of chlorophyll a in seawater
+CHL_B //concentration of chlorophyll b in seawater
+depth_max
+DIC //dissolved inorganic carbon
+DOC //dissolved organic carbon
+DON //dissolved organic nitrogen
+DOP //dissolved organic phosphorus 
+N2O //nitrous oxide
+NO2 //concentration of nitrite in seawater 
+NO2_NO3 //NOX Nitrate + Nitrite 
+OXYGEN 
+P_BACT //Prochlorococcus
+pCO2 //partial pressure of carbon dioxide 
+PIC //particulate inoragnic carbon
+PN //particulate nitrogen
+PP //particulate phosphorus
+pres_max 
+PSi //Particulate Silica
+SALNITY
+SIGMA //potential density in TARA_ENV_Con, HOT_Niskin and BATS_bottle
+SILCAT //silicate
+SPEC_SI //Spectrophotometric Silicate
+TDN //total dissolved nitrogen
+TDP //total dissolved phosphorus 
+
+# BATS_pigments
+
+Chl //concentration of chlorophyll a in seawater
+p13	//concentration of chlorophyll b in seawater
+p14	//concentration of chlorophyll a in seawater
+decy //Decimal Year
+Depth //Depth
+time //(hhmm)
+
+# GOS
+
+collection_date
+collection_time
+depth
+dissolved_oxygen //oxygen
+filter_max
+filter_min
+fluorescence //shows up 5 times pin this down
+ph
+salinity
+temperature
+
+# MM-ETSP //looks like these parameters are about the experimental growth medium in which the transcriptomics experiments were conducted not about the original seawater where they orginate thus I can't use the same semantics concentration of x in seawater for these. It would have to be in artifical seawater (or similar)
+
+collection_date
+collection_time
+depth
+filter_max
+filter_min

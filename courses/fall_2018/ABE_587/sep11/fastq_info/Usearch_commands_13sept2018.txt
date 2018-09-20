@@ -1,0 +1,32 @@
+## Merge R1 and R2 files using default parameters
+./usearch -fastq_mergepairs 16S-mockS.1_V4_R1-hdr.fastq -reverse 16S-mockS.1_V4_R2-hdr.fastq -fastqout 16S-mock-merged.fq 
+
+## Get stats on reads merged using default parameters
+./usearch -fastx_info 16S-mock-merged.fq 
+
+## Merge R1 and R2 files using different parameters to account for the long overlap typical of 2x250 V4. For example, it is often better to allow more differences in the alignment compared to the default parameters. 
+##For example, you might choose to increase set -fastq_maxdiffs 10 -fastq_pctid 80:
+
+./usearch -fastq_mergepairs 16S-mockS.1_V4_R1-hdr.fastq -reverse 16S-mockS.1_V4_R2-hdr.fastq -relabel @ -fastq_maxdiffs 10 -fastq_pctid 80 -fastqout 16S-mock-merged_maxdif10.fq
+
+## Get stats on reads merged using different parameters
+./usearch -fastx_info 16S-mock-merged_maxdif10.fq 
+
+##COMMAND fastq_eestats2 using non-default parameters for merged reads ***the -length_cutoffs and -ee_cutoffs parameters need to be given after the -output file flag. 
+./usearch -fastq_eestats2 16S-mock-merged_maxdif10.fq -output 16S-mock-merged_maxdif10.stats2 -length_cutoffs 150,250,50 -ee_cutoffs 0.25,0.5,0.75
+
+##COMMAND QC merged reads using parameters chosen (250 bp length and max_ee 0.5) 
+./usearch -fastq_filter 16S-mock-merged_maxdif10.fq -fastq_trunclen 250 -fastq_maxee 0.45 -fastqout 16S-mock-merged_maxdif10-ee.5truc250.fq
+
+##Dereplicate sequences to find unique reads (removes singletons)
+./usearch -fastx_uniques 16S-mock-merged_maxdif10-ee.5truc250.fq -fastaout 16S-mock-merged_maxdif10-ee.5truc250.uniques.fa -minuniquesize 2 -sizeout -relabel Uniq
+
+##Dereplicate sequences to find unique reads (removes unique clusters with <3 reads)
+./usearch -fastx_uniques 16S-mock-merged_maxdif10-ee.5truc250.fq -fastaout 16S-mock-merged_maxdif10-ee.5truc250min2.uniques.fa -minuniquesize 2 -sizeout -relabel Uniq
+
+## cluster de-replicated sequences at 97% sequence identity
+./usearch -cluster_otus 16S-mock-merged_maxdif10-ee.5truc250min2.uniques.fa -otus 16S-mock-rad3.fa -relabel OTU_  -uparseout 16S-mock-rad3.txt
+
+## check results against mock community
+./usearch -uparse_ref 16S-mock-rad3.fa -db /Users/juren/Documents/IBEST_data_analyses/IBEST_data_analysis/V4_mock/HMP_MOCK.v51.fasta -strand plus -uparseout out.up
+
