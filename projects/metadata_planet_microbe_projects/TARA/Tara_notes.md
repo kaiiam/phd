@@ -33,7 +33,7 @@ Doesn't have the essential metadata, probably safe to skip for now.
 
 This has the metadata listed on PANGAEA, and it has 71 fields including ENA links lat long and expected chem parameters so this may be the "correct full dataset" which we'd need to include. I'll have to check the others to see if this isn't it.
 
-I don't think this is the 'final' TARA data we want. Many of the fields are calculated from models such as Darwin for iron and ammonium, or AMODIS for PAR. So this may be a cool and complete dataset from some modeling paper but the data seem to all be calculated from Darwin and AMODIS models.
+I don't think this is the 'final' TARA data we want. Many of the fields are calculated from models such as Darwin for iron and ammonium, or AMODIS for PAR. So this may be a cool and complete dataset from some modeling paper but the data seem to all be calculated from Darwin and AMODIS models, not true measurements.
 
 # 5)
 
@@ -45,7 +45,9 @@ carbonate chemistry project specific metadata, what genomic samples were collect
 
 [Guidi, L; Morin, P; Coppola, L et al. (2017): Environmental context of all samples from the Tara Oceans Expedition (2009-2013), about nutrients in the targeted environmental feature. ](https://doi.pangaea.de/10.1594/PANGAEA.875575)
 
-This has the po4 no3 no2 nox sio4 with the 4 quartiles for (what I understand) is all tara samples. May want to grab this stuff in addition to #7 
+This has the po4 no3 no2 nox sio4 with the 4 quartiles for (what I understand) is all tara samples. May want to grab this stuff in addition to #7
+
+Include in spreadsheet as TARA_nutr
 
 # 7)
 
@@ -55,11 +57,15 @@ This is the first TARA pangaea page I had been looking at. I had originally pres
 
 This may be the equivalent of TARA_CTD or sensor data. The Chl a and no3 etc data are calculated from in-situ sensors.
 
+Included in spreadsheet as TARA_Env_context
+
 # 8)
 
 [Guidi, L; Ras, J; Claustre, H et al. (2017): Environmental context of all samples from the Tara Oceans Expedition (2009-2013), about pigment concentrations (HPLC) in the targeted environmental feature.](https://doi.pangaea.de/10.1594/PANGAEA.875569)
 
 This one is about about HPLC pigment concentrations. I'm sure this overlaps with HOT_niskin and BATS_pigments. We should decide if this is going to be added later. This stuff doesn't need to be in the first round. Or just some of it.
+
+Include in spreadsheet as: TARA_HPLC
 
 # 9)
 
@@ -73,8 +79,8 @@ Metadata about what sampling techniques were used where the samples when. I don'
 
 Data which is associated  with [this paper:](https://www.nature.com/articles/sdata201523)
 
-My understanding is that these were samples taken which correspond to a varity of mesoscale marine features such as surface water layer, deep chlorophyll maximum layer,  mesopelagic zone ... etc.
+My understanding is that these were samples taken which correspond to a variety of mesoscale marine features such as surface water layer, deep chlorophyll maximum layer,  mesopelagic zone ... etc.
 
-I'm not sure to what extent these correspond with the other TARA genomic data but this data for many parameters o2 no2 no3 chl for each of the marine features. This is a neat collection as it is highly semantically annotated/ enriched with ENVO terms. But I don't think this data needs to be included in round 1 to make the general overlaping cyberinfrustructure work out. They also mention in the paper something about "the development of on line discovery tools and collaborative annotation tools for sequences and images." Not sure if there is a live portal for this yet or what the deal is if this is something we should be aware of. There are pangaea links in the paper to access TARA metadata but the links don't work for me.
+I'm not sure to what extent these correspond with the other TARA genomic data but this data for many parameters o2 no2 no3 chl for each of the marine features. This is a neat collection as it is highly semantically annotated/ enriched with ENVO terms. But I don't think this data needs to be included in round 1 to make the general overlapping cyberinfrustructure work out. They also mention in the paper something about "the development of on line discovery tools and collaborative annotation tools for sequences and images." Not sure if there is a live portal for this yet or what the deal is if this is something we should be aware of. There are pangaea links in the paper to access TARA metadata but the links don't work for me.
 
 I don't think this is necessary to add now. There would be a lot of terms to come from this but I'm not sure if that's worth doing as of now. We'd need to see if there's scope/if we've pledged to do this.
