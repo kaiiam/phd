@@ -72,3 +72,5 @@ metagenome
 ## [Raw LC-MS/MS and DNA](https://www.darkenergybiosphere.org/dataset/raw-lc-msms-and-dna/)
 
 proteomes from some isolates may not be harvest-able
+
+## [Project: An Integrated Study of Energy Metabolism, Carbon Fixation, and Colonization Mechanisms in Chemosynthetic Microbial Communities at Deep-Sea Vents](https://www.bco-dmo.org/project/2216)
